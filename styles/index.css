@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --background-gradient: linear-gradient(96.13deg, #03DF96 -18.49%, #00E8FF 138.6%);
+    --bg: #000;
+    --card-bg: rgba(78, 79, 79, 0.2);
+    --card-shadow: 0px 2.70045px 26.3294px rgba(0, 0, 0, 0.25);
+    --contarct-font: 'Noto Sans', sans-serif;
+    --landing-font: 'Inter', sans-serif;
+    --bfont: 'Poppins', sans-serif;
+    --font-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    color: var(--font-color);
+    background: var(--bg);
+    overflow-x: hidden;
+}
+
+.contain {
+    width: min(90rem, 95%);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--landing-font);
+
+}
+
+.nav-logo {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link-box ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-box ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    height: 30px;
+}
+
+.bg-button {
+    height: inherit;
+    background: var(--background-gradient);
+    border: none;
+    border-radius: 10px;
+    width: 125px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.bg-button:hover {
+    box-shadow: 0px 4px 19px #03DF96;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hamburger,nav label,#checkbtn{
+    display: none;
+}
+
+
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--landing-font);
+}
+
+.main-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 95px;
+    text-align: center;
+    max-width: min(75rem,90%);
+    margin: 10px 0;
+}
+
+.main-content {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    max-width: min(55rem,75%);
+}
+
+.main-buttons {
+    width: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.main-buttons .mb {
+    background: var(--background-gradient);
+    border: none;
+    box-shadow: 0px 4px 19px #03DF96;
+    width: 150px;
+    height: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-top: 50rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .link-box{
+        position: fixed;
+        width: 100%;
+        height: 75vh;
+        top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+    }
+    .link-box ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-between;
+        padding: 0;
+        height: 95%;
+        width: 75%;
+        z-index: 1;
+        box-shadow: 0px 0px 30px rgba(22, 73, 56, 0.33);
+    }
+    .link-box ul::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(50px);
+        background: rgba(22, 73, 56);
+        border-radius: 25px;
+        z-index: -1;
+      }
+      .hamburger,nav label,#checkbtn{
+        display: block;
+    }
+      .hamburger{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;   
+        justify-content: center; 
+        flex-direction: column;
+      }
+      .hamburger span{
+        width: 90%;
+        height: 4px;
+        background: rgba(22, 73, 56);
+        margin: 2px 0;
+        position: relative;
+      }
+      nav input:checked ~ .link-box{
+        opacity: 1;
+      }
+}
