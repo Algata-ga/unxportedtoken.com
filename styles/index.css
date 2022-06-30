@@ -1,11 +1,121 @@
-.hero {
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+:root {
+    --background-gradient: linear-gradient(
+        96.13deg,
+        #03df96 -18.49%,
+        #00e8ff 138.6%
+    );
+    --bg: #000;
+    --card-bg: rgba(78, 79, 79, 0.2);
+    --card-shadow: 0px 2.70045px 26.3294px rgba(0, 0, 0, 0.25);
+    --contarct-font: "Noto Sans", sans-serif;
+    --landing-font: "Inter", sans-serif;
+    --bfont: "Poppins", sans-serif;
+    --font-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    color: var(--font-color);
+    background: var(--bg);
+}
+
+.contain {
+    width: min(90rem, 95%);
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--landing-font);
+}
+
+.nav-logo {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link-box ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-box ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    height: 30px;
+}
+
+.bg-button {
+    height: inherit;
+    background: var(--background-gradient);
+    border: none;
+    border-radius: 10px;
+    width: 125px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.bg-button:hover {
+    box-shadow: 0px 4px 19px #03df96;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hamburger,
+nav label,
+#checkbtn {
+    display: none;
+}.hero {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 .main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 80px - 50px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +129,7 @@
     top: 10vh;
     right: 0;
     bottom: 0;
-    left: 15vh;
+    left: 10%;
     height: 80vh;
     width: 80%;
     filter: blur(200px);
@@ -70,7 +180,6 @@
 .contract {
     width: fit-content;
     height: 50px;
-    position: absolute;
     bottom: 20px;
     font-size: 20px;
     font-family: var(--contarct-font);
@@ -235,6 +344,10 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 26px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box {
@@ -256,12 +369,28 @@
 
 .embed .right {
     box-shadow: 0px 4px 62px 16px rgba(3, 223, 150, 0.24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.embed iframe {
-    width: 500px;
-    height: 600px;
-}
+.container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    padding-top: 620px; /* 16:9 Aspect Ratio */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 
 .team {
     display: flex;
@@ -480,9 +609,17 @@ a {
     .box .left {
         text-align: center;
     }
+    .container {
+        position: relative;
+        width: 65%;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    
+    .main{
+        height: calc(100vh - 80px - 100px);
+    }
     .main-heading {
         font-size: 52px;
         line-height: 68px;
@@ -494,16 +631,16 @@ a {
     }
 
     .main-buttons {
-        width: 40rem;
+        width: 90%;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         margin-top: 10px;
     }
 
     .main-buttons button {
-        margin: 10px 0;
+        margin: 10px 10px;
         height: 45px;
     }
 
@@ -589,17 +726,46 @@ a {
         left: 3.5rem;
         right: 0;
     }
+    .container {
+        position: relative;
+        width: 80%;
+    }
+    .team{
+        margin-top: 6rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    .main{
+        min-height: fit-content;
+    }
     .main-heading {
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 35px;
+        line-height: 45px;
+        max-width: 95%;
+
+    }
+    .contract{
+        padding-bottom: 2rem;
     }
 
     .main-content {
-        font-size: 17px;
-        line-height: 25px;
+        max-width: 95%;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .main button{
+        width: 125px !important;
+        height: 40px !important;
+        font-size: 1rem;
+    }
+    .contract{
+        font-size: .9rem;
+    }
+    .timeline::before {
+        top: 20px;
+        left: 0px;
+        height: 92%;
     }
 
     .timeline ul li:nth-child(odd),
@@ -607,8 +773,11 @@ a {
         width: 70%;
         float: none;
         text-align: left;
-        left: 2rem;
+        left: 1rem;
         right: 0;
+    }
+    .container {
+        width: 98%;
     }
 }
 
