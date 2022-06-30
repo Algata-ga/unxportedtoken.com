@@ -20,11 +20,17 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     color: var(--font-color);
     background: var(--bg);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 
 .contain {
     width: min(90rem, 95%);
@@ -108,7 +114,79 @@ nav label,
 #checkbtn {
     display: none;
 }
+.heading-right {
+    width: fit-content;
+    transform: rotate(90deg);
+    font-family: var(--landing-font);
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: capitalize;
+    align-self: flex-end;
+    color: #616363;
+    padding-top: 10px;
+}
 
+.heading-left {
+    width: fit-content;
+    transform: rotate(270deg);
+    font-family: var(--landing-font);
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: capitalize;
+    align-self: flex-start;
+    color: #616363;
+    padding-top: 10px;
+}
+
+
+.contain {
+    width: min(90rem, 95%);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    font-family: var(--bfont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.flinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flinks .link {
+    font-size: 1.8rem;
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #03df96 0%, #03df96 100%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -180,4 +258,12 @@ nav label,
         margin: 2px 0;
         position: relative;
     }
+    .nav-logo{
+        width: auto;
+    }
+    .company-name{
+        display: none;
+    }
 }
+
+
