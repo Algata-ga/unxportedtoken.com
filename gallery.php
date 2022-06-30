@@ -44,7 +44,7 @@ function renderImages(){
     <!--content=""-->
     <!--/>-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
