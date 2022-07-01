@@ -359,6 +359,19 @@
     padding: 5px 10px;
 }
 
+.disclaimer,.disclaimer .contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disclaimer .fa{
+    color: yellow;
+}
+.disclaimer h4{
+    max-width: 40rem;
+    text-align: center;
+    font-family: var(--bfont);
+}
 
 
 @media screen and (max-width: 1200px) {
