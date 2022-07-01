@@ -187,6 +187,17 @@ a {
     justify-content: center;
     color: #000;
 }
+.algata{
+    width: 98%;
+    text-align: right;
+    padding-bottom: 20px;
+    font: 1rem var(--bfont);
+    color: grey;
+}
+.algata a{
+    color: #32a6fb;
+    font-style: italic;
+}
 
 @media screen and (max-width: 768px) {
 

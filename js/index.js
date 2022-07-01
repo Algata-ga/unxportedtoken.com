@@ -2,7 +2,7 @@ const date = new Date();
 const year = date.getFullYear();
 const copyright =
     year +
-    '<strong><a href="#"> UNEXPORTED </a></strong>';
+    '<strong><a href="#"> UNXPORTED </a></strong>';
 document.getElementById("copyright").innerHTML = copyright;
 
 

@@ -113,7 +113,18 @@
     line-height: 26px;
     text-align: right;
 }
-
+.points{
+    max-width: 100%;
+    padding-right: 40px;
+    align-self: flex-end;
+}
+.points li{
+    list-style: '◈ '; 
+    font-size: 1.2rem;   
+    text-transform: uppercase;
+    direction: rtl;
+    text-align: right;
+}
 .roadmap {
     width: 100%;
     position: relative;
@@ -307,11 +318,12 @@
     background: rgba(78, 79, 79, 0.2);
     box-shadow: 0px 2.70045px 26.3294px rgba(0, 0, 0, 0.25);
     text-align: right;
-    width: 225px;
+    width: 255px;
+    height: 125px;
     position: relative;
     right: -55px;
     bottom: 20px;
-    padding: 5px 10px;
+    padding: 2px 10px;
 }
 
 .swiper-slide img {
@@ -324,6 +336,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.person span{
+
+    background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.person h2{
+    font-size: 1.5rem;
+}
+.person h4{
+    font-size: 1rem;
 }
 
 .latest {
@@ -371,6 +395,7 @@
     max-width: 40rem;
     text-align: center;
     font-family: var(--bfont);
+    font-weight: 400;
 }
 
 
@@ -449,6 +474,12 @@
     .container {
         position: relative;
         width: 65%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .points{
+        max-width: 100%;
     }
 }
 
@@ -569,6 +600,13 @@
     }
     .team{
         margin-top: 6rem;
+    }
+
+    .points{
+        max-width: 70%;
+    }
+    .disclaimer h4{
+        text-align: left;
     }
 }
 
