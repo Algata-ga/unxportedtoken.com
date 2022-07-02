@@ -29,7 +29,7 @@
             </a>
             <div id="links" class="link-box">
                 <ul>
-                    <li><a href="/gallery.php">Gallery</a></li>
+                    <li><a href="/gallery.php">Contact</a></li>
                     <li>About</li>
                     <li>Team</li>
                     <li><button class="bg-button">Whitepaper</button></li>
@@ -165,56 +165,54 @@
     <div class="team">
         <div class="content-box contain">
             <h1 class="heading-left">Team</h1>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/ceoo.png" />
-                        </div>
-                        <div class="person">
-                            <h2>Rotz</h2>
-                            <h4><span>CEO</span>,<br>UNXPORTED</h4>
-                        </div>
+            <div class="team-container">
+                <div class="team-box sub1">
+                    <div class="img-box">
+                        <img src="./assets/ceoo.png" />
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/cfo.png" />
-                        </div>
-                        <div class="person">
-                            <h2>Anil Raj</h2>
-                            <h4><span>CFO</span>,<br>UNXPORTED</h4>
-                        </div>
+                    <div class="person">
+                        <h2>Rotz</h2>
+                        <h4><span>CEO</span>,<br>UNXPORTED</h4>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/ophead.png" />
-                        </div>
-                        <div class="person">
-                            <h2>Biljo Biju</h2>
-                            <h4><span>MANAGER OP HEAD</span>, <br> UNXPORTED</h4>
-                        </div>
+                </div>
+                <div class="team-box sub2">
+                    <div class="img-box">
+                        <img src="./assets/cfo.png" />
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/mh.png" />
-                        </div>
-                        <div class="person">
-                            <h2>Abhijith</h2>
-                            <h4><span>MARKETING HEAD</span>,<br>UNXPORTED</h4>
-                        </div>
+                    <div class="person">
+                        <h2>Anil Raj</h2>
+                        <h4><span>CFO</span>,<br>UNXPORTED</h4>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/teammod.png" />
-                        </div>
-                        <div class="person">
-                            <h2>Justin</h2>
-                            <h4><span>TEAM MODERATOR</span>,<br>UNXPORTED</h4>
-                        </div>
+                </div>
+                <div class="team-box sub3">
+                    <div class="img-box ">
+                        <img src="./assets/ophead.png" />
                     </div>
-
+                    <div class="person">
+                        <h2>Biljo Biju</h2>
+                        <h4><span>MANAGER OP HEAD</span>, <br> UNXPORTED</h4>
+                    </div>
+                </div>
+                <div class="team-box sub4">
+                    <div class="img-box">
+                        <img src="./assets/mh.png" />
+                    </div>
+                    <div class="person">
+                        <h2>Abhijith</h2>
+                        <h4><span>MARKETING HEAD</span>,<br>UNXPORTED</h4>
+                    </div>
+                </div>
+                <div class="team-box sub5">
+                    <div class="img-box">
+                        <img src="./assets/teammod.png" />
+                    </div>
+                    <div class="person">
+                        <h2>Justin</h2>
+                        <h4><span>TEAM MODERATOR</span>,<br>UNXPORTED</h4>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -288,9 +286,9 @@
             <div class="link"></i><i class="fa-brands fa-instagram"></i></div>
             <div class="link"><i class="fa-brands fa-youtube"></i></i></div>
         </div>
-        
+
     </footer>
-    <div class="algata"> 
+    <div class="algata">
         Designed & Developed by <a target="_blank" href="http://algata.in">Algata</a>
     </div>
 
@@ -304,10 +302,26 @@
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
-            slidesPerView: "auto",
+            slidesPerView: "3",
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    centeredSlides: false
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 100,
+                    centeredSlides: false
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 80,
+                },
             },
             coverflowEffect: {
                 rotate: 0,

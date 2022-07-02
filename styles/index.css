@@ -111,19 +111,18 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 26px;
-    text-align: right;
+    text-align: left;
 }
 .points{
     max-width: 100%;
     padding-right: 40px;
-    align-self: flex-end;
+    align-self: flex-start;
 }
 .points li{
     list-style: '◈ '; 
     font-size: 1.2rem;   
     text-transform: uppercase;
-    direction: rtl;
-    text-align: right;
+    text-align: left;
 }
 .roadmap {
     width: 100%;
@@ -286,10 +285,49 @@
 .mySwiper .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
     height: 300px;
+    max-width: 400px;
+    aspect-ratio: 1;
     margin: 0 20px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    grid-gap: 20px;
+    justify-items: center;
+    padding-bottom: 5rem;
+}
+.sub1{
+    grid-column: 1;
+}
+.sub2{
+    grid-column: 3;
+}
+.sub3{
+    grid-column: 2/2;
+}
+
+.sub4{
+    grid-column: 1;
+    grid-row: 3;
+}
+.sub5{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.team-box{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+
 }
 
 .swiper-3d .swiper-cube-shadow,
@@ -303,9 +341,11 @@
     background-image: none;
 }
 
-.swiper-slide .img-box {
-    width: 200px;
-    height: 200px;
+
+
+.team-box .img-box {
+    width: 200px !important;
+    height: 200px !important;
     overflow: hidden;
     border-radius: 50%;
     position: relative;
@@ -314,28 +354,26 @@
     border: 2px solid #03df96;
 }
 
-.swiper-slide .person {
+
+.team-box .person {
     background: rgba(78, 79, 79, 0.2);
     box-shadow: 0px 2.70045px 26.3294px rgba(0, 0, 0, 0.25);
     text-align: right;
-    width: 255px;
-    height: 125px;
+    width: 235px;
     position: relative;
     right: -55px;
     bottom: 20px;
-    padding: 2px 10px;
+    padding: 1px 10px;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-}
+
 
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    aspect-ratio: 1/1;
 }
 .person span{
 
@@ -421,7 +459,20 @@
         left: -4rem;
     }
 }
-
+@media (max-width:1250px) {
+    .team-container{
+        width: 100%;
+    grid-template-columns: repeat(2, minmax(23rem, 1fr));
+    }
+    .sub1,.sub2,.sub3,.sub4{
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .sub5{
+        grid-row: 3;
+        grid-column: span 2;
+    }
+}
 @media screen and (max-width: 992px) {
     .main-heading {
         font-size: 65px;
@@ -601,12 +652,29 @@
     .team{
         margin-top: 6rem;
     }
+    .team-container{
+        grid-template-columns: repeat(1, minmax(15rem, 1fr));
+    
+        }
+        .sub1,.sub2,.sub3,.sub4,.sub5{
+            grid-row: auto;
+            grid-column: auto;
+        }
 
     .points{
         max-width: 70%;
     }
     .disclaimer h4{
         text-align: left;
+    }
+    .swiper-slide{
+        opacity: 0;
+        transition: .3s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    .swiper-slide-active{
+        opacity: 1;
+        transition: .3s cubic-bezier(0.23, 1, 0.320, 1);
+
     }
 }
 
