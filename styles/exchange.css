@@ -1,5 +1,4 @@
 .parent {
-    margin-bottom: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,21 +7,30 @@
 }
 .chart iframe {
     width: 49%;
-    height: 70vh;
+    height: 80vh;
 }
 .chart iframe:nth-child(1) {
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px 0 0 25px;
 }
 .chart iframe:nth-child(2) {
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 25px 25px 0;
 }
 
 @media screen and (max-width: 990px) {
+    body {
+        overflow-y: scroll;
+    }
     .parent {
         flex-direction: row;
     }
     .chart iframe {
         width: 100%;
-        height: 60vh;
+    }
+    .chart iframe:nth-child(1) {
+        border-radius: 25px 25px 0 0;
+    }
+    .chart iframe:nth-child(2) {
+        border-radius: 0 0 25px 25px;
+        height: 81vh;
     }
 }

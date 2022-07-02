@@ -19,8 +19,8 @@
 html {
     scroll-behavior: smooth;
 }
-*{
-    -ms-overflow-style: none; 
+* {
+    -ms-overflow-style: none;
     scrollbar-width: none;
 }
 body {
@@ -85,7 +85,6 @@ header nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .link-box ul {
     list-style: none;
@@ -164,7 +163,7 @@ nav label,
 .contain {
     width: min(90rem, 95%);
 }
-header ul li a:hover{
+header ul li a:hover {
     text-shadow: 0 0 10px #03df96;
 }
 footer {
@@ -190,7 +189,6 @@ a {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .flinks .link {
@@ -236,8 +234,6 @@ a {
     align-items: center;
     justify-content: center;
 }
-
-
 
 @media screen and (max-width: 850px) {
     .link-box {
