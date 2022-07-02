@@ -19,6 +19,10 @@
 html {
     scroll-behavior: smooth;
 }
+*{
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -36,7 +40,7 @@ body[data-scrollable="true"] {
 body[data-scrollable="false"] {
     overflow: hidden;
 }
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
 }
 
