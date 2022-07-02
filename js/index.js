@@ -12,9 +12,11 @@ const nav_toggle = () => {
 
 const close_nav = () => {
     const element = document.getElementById("links");
-    element.classList.remove("open");
-    document.body.dataset.scrollable =
-        document.body.dataset.scrollable === "true" ? "false" : "true";
+    if (element.classList.contains("open")) {
+        document.body.dataset.scrollable =
+            document.body.dataset.scrollable === "true" ? "false" : "true";
+        element.classList.remove("open");
+    }
 };
 
 const close_modal = (id) => {
