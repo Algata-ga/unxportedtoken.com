@@ -237,9 +237,7 @@ a {
     justify-content: center;
 }
 
-.modal-container img {
-    height: 200px;
-}
+
 
 @media screen and (max-width: 850px) {
     .link-box {
