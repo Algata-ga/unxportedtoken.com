@@ -91,6 +91,15 @@
     max-width: min(75rem, 90%);
     margin: 10px 0;
 }
+.main h2{
+    font-weight: 600;
+}
+.main h2 b{
+    background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
 
 .main-content {
     font-style: normal;
