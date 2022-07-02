@@ -187,6 +187,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .flinks .link {
@@ -195,8 +197,8 @@ a {
     margin-top: 20px;
     margin-bottom: 30px;
     background: linear-gradient(180deg, #03df96 0%, #03df96 100%);
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
