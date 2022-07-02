@@ -29,13 +29,13 @@
             </a>
             <div id="links" class="link-box">
                 <ul>
-                    <li><a href="/gallery.php">Gallery</a></li>
-                    <li>About</li>
-                    <li>Team</li>
-                    <li><button class="bg-button">Whitepaper</button></li>
+                    <li><a href="#About" onclick="close_nav()">About</a></li>
+                    <li><a href="#Roadmap" onclick="close_nav()">Roadmap</a></li>
+                    <li><a href="#Team" onclick="close_nav()">Team</a></li>
+                    <li><button class="bg-button" onclick="close_nav()">Whitepaper</button></li>
                 </ul>
             </div>
-            <div class="hamburger" onclick="nav()">
+            <div class="hamburger" onclick="nav_toggle()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -80,7 +80,7 @@
     </div>
     </div>
    
-    <div class="about">
+    <div class="about" id="About">
         <div class="content-box contain">
             <h1 class="heading-right">about</h1>
             <h4 class="content">We are building an online universe to influence the actions of the crypto world .we are
@@ -97,7 +97,7 @@
         </div>
     </div>
 
-    <div class="roadmap">
+    <div class="roadmap" id="Roadmap">
         <div class="content-box contain">
             <h1 class="heading-left">roadmap</h1>
             <div class="timeline">
@@ -180,7 +180,7 @@
     </div>
 
 
-    <div class="team">
+    <div class="team" id="Team">
         <div class="content-box contain">
             <h1 class="heading-left">Team</h1>
             <div class="swiper mySwiper">
