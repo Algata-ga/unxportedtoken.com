@@ -3,39 +3,58 @@
 
 <head>
     <meta charset="utf-8" />
-    <!--<link rel="icon" href=favicon.ico" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<meta-->
-    <!--name="description"-->
-    <!--content=""-->
-    <!--/>-->
+    <meta
+        name="description"
+        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes. We are building an online universe to influence the actions of the crypto world. We are looking for early adopters people who have intentions to make progress in the technical world, to take control of the future."
+    />
+    <meta
+        property="og:title"
+        content="UnxPorted Token - UNXP"
+    />
+    <meta
+        property="og:description"
+        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes. We are building an online universe to influence the actions of the crypto world. We are looking for early adopters people who have intentions to make progress in the technical world, to take control of the future."
+    />
+    <meta name="image" property="og:image" content="/assets/logo.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="71"/>
+    <meta property="og:image:height" content="71"/>
+    <meta name="keywords" content="UnxPorted Unexported UNXP UNxP UNxPORTED Cryptocurrency NFT Assest Investment Faith Cryptography Market Community Moon"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
-    <title>UNXPORTED</title>
+    <title>UNXP : UNxPORTED TOKEN</title>
 </head>
 
-<body>
+<body data-scrollable="true">
     <header>
         <nav class="contain">
-            <a href="#">
+            <a href="/">
                 <div class="nav-logo">
                     <img src="./assets/logo.svg" alt="logo">
-                    <h3 class="company-name">UNXPORTED</h3>
+                    <h3 class="company-name">UNxPORTED</h3>
                 </div>
             </a>
             <div id="links" class="link-box">
                 <ul>
+<<<<<<< HEAD
                     <li><a href="/gallery.php">Contact</a></li>
                     <li>About</li>
                     <li>Team</li>
                     <li><button class="bg-button">Whitepaper</button></li>
+=======
+                    <li><a href="#About" onclick="close_nav()">About</a></li>
+                    <li><a href="#Roadmap" onclick="close_nav()">Roadmap</a></li>
+                    <li><a href="#Team" onclick="close_nav()">Team</a></li>
+                    <li><a href="/assets/UnxPorted Token Whitepaper.pdf" class="bg-button" download="">Whitepaper</a></li>
+>>>>>>> f7cb0faa72f920958754dc63ad1383a6eec9d56e
                 </ul>
             </div>
-            <div class="hamburger" onclick="nav()">
+            <div class="hamburger" onclick="nav_toggle()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -45,30 +64,51 @@
     <div class="hero">
         <div class="main contain">
             <h1 class="main-heading">
-                UNXPORTED
+                UNxPORTED
                 TOKEN
             </h1>
-            <h4 class="main-content">
+            <h2 class="main-content">
                 UNXP represents a tradable asset or utility that resides on its own blockchain and allow users it for
                 legit investments and economic purposes.
-            </h4>
+            </h2>
             <div class="main-buttons">
                 <button class="mb">Chart</button>
-                <button class="mb">Swap</button>
+                <button class="mb" onclick="open_modal('wallet-modal')">Swap</button>
             </div>
 
         </div>
         <div class="contract">
             <p>Contract Address : <span>0xa531a733070a5fF4866D1327d82e403Fa35290A6</span></p>
         </div>
+        <div class="modal" data-toggle="false" id="wallet-modal">
+            <div class="modal-container">
+            <button onclick="close_modal('wallet-modal')">Close</button>
+            <a href="/How-to-setup-metamask-to-trade-UNXP.html">
+                <img src="./assets/metamask-png-logo.png" alt="Metamask"/>
+            </a>
+            <a href="/How-to-setup-trust-wallet-to-trade-UNXP.html">
+                <img src="./assets/horizontal_blue.png" alt="Trust Wallet"/>
+            </a>
+            <a href="/How-to-setup-pancake-swap-to-trade-UNXP.html">
+                <img src="./assets/pan cake swap.png" alt="Pancake Swap"/>
+            </a>
+            <a href="https://poocoin.app/tokens/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a">
+                <img src="./assets/poocoin-poocoin-logo.png" alt="PooCoin"/>
+            </a>
+            <a href="https://flooz.trade/trade/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a?network=bsc">
+                <img src="./assets/flooz.png" alt="Flooz"/>
+            </a>
+        </div>
     </div>
-    <div class="about">
+    </div>
+   
+    <div class="about" id="About">
         <div class="content-box contain">
-            <h1 class="heading-right">about</h1>
-            <h4 class="content">We are building an online universe to influence the actions of the crypto world .we are
+            <h2 class="heading-right">about</h2>
+            <h3 class="content">We are building an online universe to influence the actions of the crypto world .we are
                 looking for early adopters people who have intentions to make progress in the technical world to take
                 control of the future
-                .For the first phase we give early acces to the layer one token as the ticket to the moon</h4>
+                .For the first phase we give early acces to the layer one token as the ticket to the moon</h3>
             <ul class="points">
                 <li>USE TO MAKE DAPPS </li>
                 <li>TOKENS CAN BE CONVERTED TO CONTRACT COINS LIKE NFT </li>
@@ -79,9 +119,9 @@
         </div>
     </div>
 
-    <div class="roadmap">
+    <div class="roadmap" id="Roadmap">
         <div class="content-box contain">
-            <h1 class="heading-left">roadmap</h1>
+            <h2 class="heading-left">roadmap</h2>
             <div class="timeline">
                 <ul>
                     <li>
@@ -147,11 +187,11 @@
 
     <div class="embed">
         <div class="content-box contain">
-            <h1 class="heading-right">swap</h1>
+            <h2 class="heading-right">swap</h2>
             <div class="box">
                 <div class="left">
-                    <h1>Lorem, ipsum.</h1>
                     <h3>Lorem, ipsum.</h3>
+                    <h4>Lorem, ipsum.</h4>
                 </div>
                 <div class="right container">
                     <iframe class="responsive-iframe" frameBorder="0" scrolling="no"
@@ -162,7 +202,7 @@
     </div>
 
 
-    <div class="team">
+    <div class="team" id="Team">
         <div class="content-box contain">
             <h1 class="heading-left">Team</h1>
             <div class="team-container">
@@ -270,21 +310,23 @@
 
     <div class="disclaimer">
         <div class="contain">
-            <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Disclaimer. The information provided on
+            <h6><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Disclaimer. The information provided on
                 this website does not constitute a recommendation to buy or sell any product, token, or coin discussed.
                 Buying and selling tokens is inherently risky, and the authors of this website do not accept any
                 liability for any losses that may occur from buying and selling tokens. Check with local regulations
-                before purchasing any cryptocurrency.</h4>
+                before purchasing any cryptocurrency.</h6>
         </div>
     </div>
 
     <footer>
         <div id="copyright"></div>
         <div class="flinks">
-            <div class="link"><i class="fa-brands fa-facebook"></i></div>
-            <div class="link"><i class="fa-brands fa-twitter"></i></i></div>
-            <div class="link"></i><i class="fa-brands fa-instagram"></i></div>
-            <div class="link"><i class="fa-brands fa-youtube"></i></i></div>
+            <a href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/" class="link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/unxportedceo" class="link"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="https://telegram.me/unxported" class="link"><i class="fa-brands fa-telegram" alt="Telegram"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4" class="link"></i><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w" class="link"><i class="fa-brands fa-youtube" alt="Youtube"></i></i></a>
+            <a href="https://discord.gg/4kkZHMjMG2" class="link"><i class="fa-brands fa-discord" alt="Discord"></i></a>
         </div>
 
     </footer>
