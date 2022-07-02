@@ -3,10 +3,10 @@
     min-height: 50vh;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     overflow-y: scroll;
 }
 .modal-grid button{
@@ -23,6 +23,12 @@
     padding: 5px;
     background: #03df96
 
+}
+.modal-grid h3{
+    font-weight: bolder;
+    background: rgba(0, 0, 0, 0.865);
+    padding: 10px;
+    border-radius: 25px;
 }
 .modal-links{
     max-height: 50vh;

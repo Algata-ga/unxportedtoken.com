@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./styles/styles.css" />
-        <link rel="stylesheet" href="./styles/how-to.css"/>
-        <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <nav class="contain">
-                <a href="/">
-                    <div class="nav-logo">
-                        <img src="./assets/logo.svg" alt="logo" />
-                        <h3 class="company-name">UNxPORTED</h3>
-                    </div>
-                </a>
-                <div id="links" class="link-box">
-                    <ul>
-                        <li>
-                            <a href="/#About" onclick="close_nav()">About</a>
-                        </li>
-                        <li>
-                            <a href="/#Roadmap" onclick="close_nav()"
-                                >Roadmap</a
-                            >
-                        </li>
-                        <li><a href="/#Team" onclick="close_nav()">Team</a></li>
-                        <li>
-                            <a
-                                href="/assets/UnxPorted Token Whitepaper.pdf"
-                                class="bg-button"
-                                download=""
-                                >Whitepaper</a
-                            >
-                        </li>
-                    </ul>
+
+<head>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/how-to.css" />
+    <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="contain">
+            <a href="/">
+                <div class="nav-logo">
+                    <img src="./assets/logo.svg" alt="logo" />
+                    <h3 class="company-name">UNxPORTED</h3>
                 </div>
-                <div class="hamburger" onclick="nav_toggle()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </header>
+            </a>
+            <div id="links" class="link-box">
+                <ul>
+                    <li>
+                        <a href="/#About" onclick="close_nav()">About</a>
+                    </li>
+                    <li>
+                        <a href="/#Roadmap" onclick="close_nav()">Roadmap</a>
+                    </li>
+                    <li><a href="/#Team" onclick="close_nav()">Team</a></li>
+                    <li>
+                        <a href="/assets/UnxPorted Token Whitepaper.pdf" class="bg-button" download="">Whitepaper</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="nav_toggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="contain">
         <h1>How to setup Metamask wallet for UNXP (UnxPorted Token) ? </h1>
-        <img src="./assets/metamask-png-logo.png" alt="Metamask"/>
+        <img src="./assets/metamask-png-logo.png" alt="Metamask" />
         <dl>
             <dt>Create MetaMask wallet <a href="https://metamask.io/">here</a></dt>
-            <dd> Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device.That will allow you to buy, sell, send, and receive UNXP <b>0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</b>
+            <dd> Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device.That will
+                allow you to buy, sell, send, and receive UNXP <b>0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</b>
             </dd>
-            <dt>Setup binance smart chain. You can follow <a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain">this article</a></dt>
+            <dt>Setup binance smart chain. You can follow <a
+                    href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain">this
+                    article</a></dt>
             <dt>Send BNB to your wallet</dt>
-            <dd>You can buy BNB bep-20 directly on MetaMask or transfer it to your MetaMask Wallet from exchanges like Coinbase, Binance, etc. Make sure to use the Bep-20 network when transfering BNB.</dd>
-            <dt>Connect your wallet to UNxPORTED (UNXP) 18 decimal Token by importing new token from account contract address paste this <b>0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</b></dt>
-            <dt>Access your wallet to UNXP by clicking ‘Connect to a wallet’ and selecting MetaMask.Buy BNB for UNxPORTED token.</dt>
-            <dd>You can start swapping as soon as you have BNB available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.</dd>
+            <dd>You can buy BNB bep-20 directly on MetaMask or transfer it to your MetaMask Wallet from exchanges like
+                Coinbase, Binance, etc. Make sure to use the Bep-20 network when transfering BNB.</dd>
+            <dt>Connect your wallet to UNxPORTED (UNXP) 18 decimal Token by importing new token from account contract
+                address paste this <b>0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</b></dt>
+            <dt>Access your wallet to UNXP by clicking ‘Connect to a wallet’ and selecting MetaMask.Buy BNB for
+                UNxPORTED token.</dt>
+            <dd>You can start swapping as soon as you have BNB available! Press ‘Select a token’ and enter the token
+                address or search for it on the tokens list.</dd>
         </dl>
-        <footer>
-            <div id="copyright"></div>
-            <div class="flinks">
-                <a href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/" class="link"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/unxportedceo" class="link"><i class="fa-brands fa-twitter"></i></i></a>
-                <a href="https://telegram.me/unxported" class="link"><i class="fa-brands fa-telegram" alt="Telegram"></i></a>
-                <a href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4" class="link"></i><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w" class="link"><i class="fa-brands fa-youtube" alt="Youtube"></i></i></a>
-                <a href="https://discord.gg/4kkZHMjMG2" class="link"><i class="fa-brands fa-discord" alt="Discord"></i></a>
-            </div>
-        </footer>
-        <div class="algata"> 
-            Designed & Developed by <a target="_blank" href="http://algata.in">Algata</a>
+    </div>
+    <footer>
+        <div id="copyright"></div>
+        <div class="flinks">
+            <a href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/"
+                class="link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/unxportedceo" class="link"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="https://telegram.me/unxported" class="link"><i class="fa-brands fa-telegram"
+                    alt="Telegram"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4" class="link"></i><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w" class="link"><i
+                    class="fa-brands fa-youtube" alt="Youtube"></i></i></a>
+            <a href="https://discord.gg/4kkZHMjMG2" class="link"><i class="fa-brands fa-discord" alt="Discord"></i></a>
         </div>
+    </footer>
+    <div class="algata">
+        Designed & Developed by <a target="_blank" href="http://algata.in">Algata</a>
+    </div>
     <script src="./js/_global.js"></script>
-    </body>
+</body>
+
 </html>
