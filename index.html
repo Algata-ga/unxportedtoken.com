@@ -41,10 +41,11 @@
             </a>
             <div id="links" class="link-box">
                 <ul>
-                    <li><a href="/gallery.php">Contact</a></li>
-                    <li>About</li>
-                    <li>Team</li>
-                    <li><button class="bg-button">Whitepaper</button></li>
+                    <li><a href="#About" onclick="close_nav()">About</a></li>
+                    <li><a href="#Roadmap" onclick="close_nav()">Roadmap</a></li>
+                    <li><a href="#Chart" onclick="close_nav()">Chart</a></li>
+                    <li><a href="#Team" onclick="close_nav()">Team</a></li>
+                    <li><button class="bg-button" onclick="close_nav()">Whitepaper</button></li>
                 </ul>
             </div>
             <div class="hamburger" onclick="nav_toggle()">
@@ -178,7 +179,7 @@
         </div>
     </div>
 
-    <div class="embed">
+    <div class="embed" id="Chart">
         <div class="content-box contain">
             <h2 class="heading-right">swap</h2>
             <div class="box">
