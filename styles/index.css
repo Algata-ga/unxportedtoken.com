@@ -120,12 +120,15 @@
     font-size: 20px;
     border-radius: 10px;
     transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-buttons .mb:hover {
     box-shadow: 0px 4px 19px #03df96;
     transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
 .contract {
     width: fit-content;
     height: 50px;
@@ -828,13 +831,13 @@
     .modal-links {
         max-height: 62vh;
     }
-    .modal-links img{
+    .modal-links img {
         max-height: 62vh;
     }
     .modal-container img {
         height: 160px;
     }
-    
+
     .main {
         min-height: fit-content;
     }
@@ -877,8 +880,8 @@
     .container {
         width: 98%;
     }
-    .disclaimer h5{
-        font-size: .7rem;
+    .disclaimer h5 {
+        font-size: 0.7rem;
         text-align: left;
     }
 }

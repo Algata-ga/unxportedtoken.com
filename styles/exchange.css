@@ -1,0 +1,28 @@
+.parent {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+.chart iframe {
+    width: 49%;
+    height: 70vh;
+}
+.chart iframe:nth-child(1) {
+    border-radius: 25px 25px 0 0;
+}
+.chart iframe:nth-child(2) {
+    border-radius: 0 0 25px 25px;
+}
+
+@media screen and (max-width: 990px) {
+    .parent {
+        flex-direction: row;
+    }
+    .chart iframe {
+        width: 100%;
+        height: 60vh;
+    }
+}
