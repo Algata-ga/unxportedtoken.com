@@ -164,7 +164,9 @@ nav label,
 .contain {
     width: min(90rem, 95%);
 }
-
+header ul li a:hover{
+    text-shadow: 0 0 10px #03df96;
+}
 footer {
     display: flex;
     align-items: center;

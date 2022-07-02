@@ -224,7 +224,11 @@
     height: fit-content;
     padding: 20px 40px;
     background: rgba(78, 79, 79, 0.2);
-    box-shadow: 0px 0px 25px #03df96;
+    box-shadow: 0px 0px 15px #03df96;
+}
+.timeline ul li:hover{
+    box-shadow: 0px 0px 35px #03df96;
+
 }
 
 .timeline ul li:nth-child(odd) {
@@ -292,10 +296,14 @@
 }
 
 .embed .right {
-    box-shadow: 0px 4px 62px 16px rgba(3, 223, 150, 0.24);
+    box-shadow: 0px 4px 42px 16px rgba(3, 223, 150, 0.24);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.embed .right:hover{
+    box-shadow: 0px 4px 62px 25px rgba(3, 223, 150, 0.24);
+
 }
 
 .container {
@@ -375,6 +383,7 @@
     grid-column: 3;
     grid-row: 3;
 }
+
 
 .team-box{
     width: 300px;
