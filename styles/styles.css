@@ -24,13 +24,18 @@ body {
     height: auto;
     color: var(--font-color);
     background: var(--bg);
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body[data-scrollable="true"] {
+    overflow: visible;
+}
+body[data-scrollable="false"] {
+    overflow: hidden;
 }
 body::-webkit-scrollbar {
     display: none;
-  }
-
+}
 
 .contain {
     width: min(90rem, 95%);
@@ -144,7 +149,6 @@ nav label,
     padding-top: 10px;
 }
 
-
 .contain {
     width: min(90rem, 95%);
 }
@@ -187,20 +191,40 @@ a {
     justify-content: center;
     color: #000;
 }
-.algata{
+.algata {
     width: 98%;
     text-align: right;
     padding-bottom: 20px;
     font: 1rem var(--bfont);
     color: grey;
 }
-.algata a{
+.algata a {
     color: #32a6fb;
     font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+.modal[data-toggle="false"] {
+    display: none;
+}
+.modal[data-toggle="true"] {
+    z-index: 10000;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+}
 
+.modal-container img {
+    height: 200px;
+}
+
+@media screen and (max-width: 768px) {
     .link-box {
         position: fixed;
         width: 100%;
@@ -269,12 +293,10 @@ a {
         margin: 2px 0;
         position: relative;
     }
-    .nav-logo{
+    .nav-logo {
         width: auto;
     }
-    .company-name{
+    .company-name {
         display: none;
     }
 }
-
-

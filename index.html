@@ -18,7 +18,7 @@
     <title>UNXPORTED</title>
 </head>
 
-<body>
+<body data-scrollable="true">
     <header>
         <nav class="contain">
             <a href="#">
@@ -54,14 +54,32 @@
             </h4>
             <div class="main-buttons">
                 <button class="mb">Chart</button>
-                <button class="mb">Swap</button>
+                <button class="mb" onclick="open_modal('wallet-modal')">Swap</button>
             </div>
 
         </div>
         <div class="contract">
             <p>Contract Address : <span>0xa531a733070a5fF4866D1327d82e403Fa35290A6</span></p>
         </div>
+        <div class="modal" data-toggle="false" id="wallet-modal">
+            <div class="modal-container">
+                    <button onclick="close_modal('wallet-modal')"> Close</button>
+            <a href="#">
+                <img src="./assets/metamask-png-logo.png"/>
+            </a>
+            <a href="#">
+                <img src="./assets/horizontal_blue.png"/>
+            </a>
+            <a href="#">
+                <img src="./assets/pan cake swap.png"/>
+            </a>
+            <a href="#">
+                <img src="./assets/poocoin-poocoin-logo.png"/>
+            </a>
+        </div>
     </div>
+    </div>
+   
     <div class="about">
         <div class="content-box contain">
             <h1 class="heading-right">about</h1>
