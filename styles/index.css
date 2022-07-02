@@ -1,6 +1,6 @@
 .modal-grid {
     width: 90%;
-    min-height: 50vh;
+    min-height: 60vh;
     position: relative;
     display: flex;
     gap: 30px;
@@ -8,6 +8,16 @@
     justify-content: center;
     flex-direction: column;
     overflow-y: scroll;
+}
+.modal-grid::before{
+    content: "";
+    position: absolute;
+    width:  80%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.926);
+    filter: blur(50px);
+    z-index: -1;
+    border-radius: 50%;
 }
 .modal-grid button {
     position: absolute;
@@ -84,7 +94,7 @@
 
 .main-content {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 25px;
     line-height: 32px;
     text-align: center;
@@ -105,7 +115,7 @@
     box-shadow: 0px 4px 10px #03df96;
     height: 45px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 29px;
     font-size: 20px;
     border-radius: 10px;
@@ -224,6 +234,8 @@
     padding: 20px 40px;
     background: rgba(78, 79, 79, 0.2);
     box-shadow: 0px 0px 15px #03df96;
+    border-radius: 10px;
+
 }
 .timeline ul li:hover {
     box-shadow: 0px 0px 35px #03df96;
@@ -246,7 +258,7 @@
 .timeline .content h3 {
     margin: 0;
     padding: 0;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0px;
     background: var(--background-gradient);
     -webkit-background-clip: text;
@@ -256,6 +268,52 @@
 .timeline .content p {
     margin: 10px 0 0;
     padding: 0;
+    font-weight: 400;
+}
+.whitepaper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.whitepaper p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.whitepaper image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whitepaper .download {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--bfont);
+    font-size: 1.188rem;
+    font-weight: 700;
+}
+.btnpaper {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #03df96;
+    background: #03df96;
+    border-radius: 5px;
+    margin: 10px 20px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.btnpaper:hover {
+    box-shadow: 0px 0px 19px #03df96;
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
 }
 
 .embed {
@@ -291,6 +349,7 @@
 }
 .left h4 {
     font-size: 1.25rem;
+    font-weight: 400;
 }
 
 .embed .right {
@@ -333,6 +392,10 @@
     font-size: 17px;
     line-height: 26px;
 }
+.team h4{
+    font-weight: 500;
+    margin: 10px 0;
+}
 
 .swiper {
     width: 100%;
@@ -362,22 +425,28 @@
     padding-bottom: 5rem;
 }
 .sub1 {
-    grid-column: 1;
+    grid-column: 1/4;
 }
 .sub2 {
-    grid-column: 3;
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 .sub3 {
-    grid-column: 2/2;
+    grid-column: 2/4;
+    grid-row: 2/3;
 }
 
 .sub4 {
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
 .sub5 {
-    grid-column: 3;
-    grid-row: 3;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.sub5 {
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 .team-box {
@@ -406,6 +475,12 @@
     top: 10px;
     z-index: 1;
     border: 2px solid #03df96;
+}
+.sub6 .img-box{
+    background: black;
+}
+.sub6 .person{
+    background: red;
 }
 
 .team-box .person {
@@ -485,7 +560,7 @@
 .disclaimer h5 {
     text-align: center;
     font-family: var(--contarct-font);
-    font-weight: 450;
+    font-weight: 400;
     color: grey;
 }
 
@@ -511,22 +586,33 @@
         left: -4rem;
     }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1024px) {
     .team-container {
         width: 100%;
         grid-template-columns: repeat(2, minmax(23rem, 1fr));
     }
-    .sub1,
-    .sub2,
-    .sub3,
+
+    .sub1 {
+        grid-column: 1/3;
+    }
+    .sub2 {
+        grid-column: 1;
+    }
+    .sub3 {
+        grid-column: 2;
+    }
+    
     .sub4 {
-        grid-row: auto;
-        grid-column: auto;
+        grid-column: 1;
     }
     .sub5 {
-        grid-row: 3;
-        grid-column: span 2;
+        grid-column: 2;
     }
+    .sub6 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
 }
 @media screen and (max-width: 992px) {
     .main-heading {
@@ -713,7 +799,8 @@
     .sub2,
     .sub3,
     .sub4,
-    .sub5 {
+    .sub5 ,
+    .sub6{
         grid-row: auto;
         grid-column: auto;
     }
