@@ -67,7 +67,7 @@
             </h2>
             <div class="main-buttons">
                 <button class="mb">Chart</button>
-                <button class="mb" onclick="open_modal('wallet-modal')">Swap</button>
+                <button class="mb" onclick="open_modal('wallet-modal')">Trade</button>
             </div>
 
         </div>
@@ -75,23 +75,31 @@
             <p>Contract Address : <span>0xa531a733070a5fF4866D1327d82e403Fa35290A6</span></p>
         </div>
         <div class="modal" data-toggle="false" id="wallet-modal">
-            <div class="modal-container">
-            <button onclick="close_modal('wallet-modal')">Close</button>
-            <a href="/How-to-setup-metamask-to-trade-UNXP.html">
-                <img src="./assets/metamask-png-logo.png" alt="Metamask"/>
-            </a>
-            <a href="/How-to-setup-trust-wallet-to-trade-UNXP.html">
-                <img src="./assets/horizontal_blue.png" alt="Trust Wallet"/>
-            </a>
-            <a href="/How-to-setup-pancake-swap-to-trade-UNXP.html">
-                <img src="./assets/pan cake swap.png" alt="Pancake Swap"/>
-            </a>
-            <a href="https://poocoin.app/tokens/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a">
-                <img src="./assets/poocoin-poocoin-logo.png" alt="PooCoin"/>
-            </a>
-            <a href="https://flooz.trade/trade/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a?network=bsc">
-                <img src="./assets/flooz.png" alt="Flooz"/>
-            </a>
+            
+            <div class="modal-container modal-grid">
+            
+            <div>
+                <h3>Wallets and Exchanges</h3>
+                <button onclick="close_modal('wallet-modal')"><i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-links">
+                <a href="/How-to-setup-metamask-to-trade-UNXP.html">
+                    <img src="./assets/metaask.jpg" alt="Metamask"/>
+                </a>
+                <a href="/How-to-setup-trust-wallet-to-trade-UNXP.html">
+                    <img src="./assets/trustwallet1.jpg" alt="Trust Wallet"/>
+                </a>
+                <a href="/How-to-setup-pancake-swap-to-trade-UNXP.html">
+                    <img src="./assets/pan cake swap.png" alt="Pancake Swap"/>
+                </a>
+                <a href="https://poocoin.app/tokens/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a">
+                    <img src="./assets/poocoin-poocoin-logo.png" alt="PooCoin"/>
+                </a>
+                <a href="https://flooz.trade/trade/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a?network=bsc">
+                    <img src="./assets/flooz.jpg" alt="Flooz"/>
+                </a>
+            </div>
         </div>
     </div>
     </div>
@@ -304,7 +312,7 @@
 
     <div class="disclaimer">
         <div class="contain">
-            <h6><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Disclaimer. The information provided on
+            <h6> Disclaimer. The information provided on
                 this website does not constitute a recommendation to buy or sell any product, token, or coin discussed.
                 Buying and selling tokens is inherently risky, and the authors of this website do not accept any
                 liability for any losses that may occur from buying and selling tokens. Check with local regulations
@@ -334,42 +342,7 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "3",
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 0,
-                    centeredSlides: false
-                },
-                992: {
-                    slidesPerView: 2,
-                    spaceBetween: 100,
-                    centeredSlides: false
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 80,
-                },
-            },
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 0,
-                modifier: 1,
-                slideShadows: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
+        
         var swiper = new Swiper(".latestSwiper", {
             effect: "coverflow",
             grabCursor: true,

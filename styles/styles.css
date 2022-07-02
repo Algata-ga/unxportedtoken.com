@@ -26,6 +26,7 @@ body {
     height: auto;
     color: var(--font-color);
     background: var(--bg);
+    font-family: var(--bfont);
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
@@ -81,6 +82,7 @@ header nav {
     -webkit-text-fill-color: transparent;
 }
 
+
 .link-box ul {
     list-style: none;
     display: flex;
@@ -109,6 +111,10 @@ header nav {
     font-weight: 700;
     font-family: inherit;
     font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
 }
 
 .bg-button:hover {
@@ -215,18 +221,19 @@ a {
     overflow-y: hidden;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .modal-container img {
     height: 200px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .link-box {
         position: fixed;
         width: 100%;

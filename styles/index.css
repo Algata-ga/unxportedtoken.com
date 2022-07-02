@@ -1,3 +1,38 @@
+.modal-grid{
+    width: 90%;
+    min-height: 50vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.modal-grid button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    aspect-ratio: 1;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 5px;
+    background: #03df96
+
+}
+.modal-links{
+    max-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: scroll;
+}
 .hero {
     display: flex;
     align-items: center;
@@ -57,14 +92,21 @@
 .main-buttons .mb {
     background: var(--background-gradient);
     border: none;
-    box-shadow: 0px 4px 19px #03df96;
     width: 150px;
+    box-shadow: 0px 4px 10px #03df96;
     height: 45px;
     font-style: normal;
     font-weight: 600;
     line-height: 29px;
     font-size: 20px;
     border-radius: 10px;
+    transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.main-buttons .mb:hover{
+    box-shadow: 0px 4px 19px #03df96;
+    transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+
+
 }
 
 .contract {
@@ -425,15 +467,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--bfont);
+    font-size: 1.2rem;
 }
 .disclaimer .fa{
     color: yellow;
 }
-.disclaimer h4{
-    max-width: 40rem;
+.disclaimer h6{
     text-align: center;
-    font-family: var(--bfont);
-    font-weight: 400;
+    font-family: var(--contarct-font);
+    font-weight: 450;
+    color: grey;
 }
 
 
