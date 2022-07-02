@@ -41,10 +41,10 @@
             </a>
             <div id="links" class="link-box">
                 <ul>
-                    <li><a href="#About" onclick="close_nav()">About</a></li>
-                    <li><a href="#Roadmap" onclick="close_nav()">Roadmap</a></li>
-                    <li><a href="#Team" onclick="close_nav()">Team</a></li>
-                    <li><a href="/assets/UnxPorted Token Whitepaper.pdf" class="bg-button" download="">Whitepaper</a></li>
+                    <li><a href="/gallery.php">Contact</a></li>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li><button class="bg-button">Whitepaper</button></li>
                 </ul>
             </div>
             <div class="hamburger" onclick="nav_toggle()">
@@ -197,57 +197,55 @@
 
     <div class="team" id="Team">
         <div class="content-box contain">
-            <h2 class="heading-left">Team</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/ceoo.png" />
-                        </div>
-                        <div class="person">
-                            <h3>Rotz</h3>
-                            <h4><span>CEO</span>,<br>UNXPORTED</h4>
-                        </div>
+            <h1 class="heading-left">Team</h1>
+            <div class="team-container">
+                <div class="team-box sub1">
+                    <div class="img-box">
+                        <img src="./assets/ceoo.png" />
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/cfo.png" />
-                        </div>
-                        <div class="person">
-                            <h3>Anil Raj</h3>
-                            <h4><span>CFO</span>,<br>UNXPORTED</h4>
-                        </div>
+                    <div class="person">
+                        <h2>Rotz</h2>
+                        <h4><span>CEO</span>,<br>UNXPORTED</h4>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/ophead.png" />
-                        </div>
-                        <div class="person">
-                            <h3>Biljo Biju</h3>
-                            <h4><span>MANAGER OP HEAD</span>, <br> UNXPORTED</h4>
-                        </div>
+                </div>
+                <div class="team-box sub2">
+                    <div class="img-box">
+                        <img src="./assets/cfo.png" />
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/mh.png" />
-                        </div>
-                        <div class="person">
-                            <h3>Abhijith</h3>
-                            <h4><span>MARKETING HEAD</span>,<br>UNXPORTED</h4>
-                        </div>
+                    <div class="person">
+                        <h2>Anil Raj</h2>
+                        <h4><span>CFO</span>,<br>UNXPORTED</h4>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="./assets/teammod.png" />
-                        </div>
-                        <div class="person">
-                            <h3>Justin</h3>
-                            <h4><span>TEAM MODERATOR</span>,<br>UNXPORTED</h4>
-                        </div>
+                </div>
+                <div class="team-box sub3">
+                    <div class="img-box ">
+                        <img src="./assets/ophead.png" />
                     </div>
-
+                    <div class="person">
+                        <h2>Biljo Biju</h2>
+                        <h4><span>MANAGER OP HEAD</span>, <br> UNXPORTED</h4>
+                    </div>
+                </div>
+                <div class="team-box sub4">
+                    <div class="img-box">
+                        <img src="./assets/mh.png" />
+                    </div>
+                    <div class="person">
+                        <h2>Abhijith</h2>
+                        <h4><span>MARKETING HEAD</span>,<br>UNXPORTED</h4>
+                    </div>
+                </div>
+                <div class="team-box sub5">
+                    <div class="img-box">
+                        <img src="./assets/teammod.png" />
+                    </div>
+                    <div class="person">
+                        <h2>Justin</h2>
+                        <h4><span>TEAM MODERATOR</span>,<br>UNXPORTED</h4>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -323,9 +321,9 @@
             <a href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w" class="link"><i class="fa-brands fa-youtube" alt="Youtube"></i></i></a>
             <a href="https://discord.gg/4kkZHMjMG2" class="link"><i class="fa-brands fa-discord" alt="Discord"></i></a>
         </div>
-        
+
     </footer>
-    <div class="algata"> 
+    <div class="algata">
         Designed & Developed by <a target="_blank" href="http://algata.in">Algata</a>
     </div>
 
@@ -339,10 +337,26 @@
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
-            slidesPerView: "auto",
+            slidesPerView: "3",
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    centeredSlides: false
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 100,
+                    centeredSlides: false
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 80,
+                },
             },
             coverflowEffect: {
                 rotate: 0,
