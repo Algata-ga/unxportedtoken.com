@@ -55,6 +55,7 @@ header {
     align-items: center;
     justify-content: center;
     background: transparent;
+    z-index: 2;
 }
 
 header nav {
@@ -100,7 +101,7 @@ header nav {
     justify-content: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     height: 30px;
 }
 
@@ -219,6 +220,7 @@ footer {
     font-weight: 400;
     font-size: 17px;
     line-height: 26px;
+    margin-top: 10px;
 }
 
 a {
@@ -323,7 +325,7 @@ a {
         bottom: 0;
         left: 0;
         height: 99vh;
-        width: 99vw;
+        width: 94.5vw;
         background: black;
         border-radius: 25px;
         z-index: -1;

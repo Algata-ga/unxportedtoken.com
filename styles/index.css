@@ -9,6 +9,7 @@
     flex-direction: column;
     overflow-y: scroll;
 }
+
 .modal-grid::before {
     content: "";
     position: absolute;
@@ -19,6 +20,8 @@
     z-index: -1;
     border-radius: 50%;
 }
+
+
 .modal-grid button {
     position: absolute;
     top: 0px;
@@ -34,15 +37,18 @@
     padding: 5px;
     background: #03df96;
 }
+
 .modal-container img {
     height: 200px;
 }
+
 .modal-grid h3 {
     font-weight: bolder;
     background: rgba(0, 0, 0, 0.865);
     padding: 10px;
     border-radius: 25px;
 }
+
 .modal-links {
     max-height: 50vh;
     display: flex;
@@ -52,19 +58,37 @@
     gap: 30px;
     overflow: scroll;
 }
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 .main {
-    height: calc(100vh - 80px - 50px);
+    height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-family: var(--landing-font);
+}
+
+.bg-logo {
+
+    opacity: 0.5;
+    position: absolute;
+    aspect-ratio: 1.13/1;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bg-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .main::before {
@@ -89,12 +113,18 @@
     line-height: 95px;
     text-align: center;
     max-width: min(75rem, 90%);
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-.main h2 {
-    font-weight: 600;
+
+.main h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 1px;
+    margin-bottom: 5px;
 }
-.main h2 b {
+
+.main p b {
     background: var(--background-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -134,17 +164,34 @@
     align-items: center;
     justify-content: center;
 }
+
 .main-buttons .mb:hover {
     box-shadow: 0px 4px 19px #03df96;
     transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 .contract {
     width: fit-content;
     height: 50px;
     bottom: 20px;
     overflow-wrap: anywhere;
-    font-size: 20px;
     font-family: var(--contarct-font);
+    margin-top: 50px;
+}
+
+.contract p {
+    background-color: #00ffab16;
+    padding: 8px 16px;
+    margin: 0 16px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contract p img {
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
 .contract p span {
@@ -152,6 +199,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .particle-bg {
     width: 100%;
     height: 100%;
@@ -159,6 +207,7 @@
     top: 0;
     z-index: -1;
 }
+
 .about {
     width: 100%;
     position: relative;
@@ -190,17 +239,20 @@
     line-height: 26px;
     text-align: left;
 }
+
 .points {
     max-width: 100%;
     padding-right: 40px;
     align-self: flex-start;
 }
+
 .points li {
     list-style: "◈ ";
     font-size: 1.2rem;
     text-transform: uppercase;
     text-align: left;
 }
+
 .roadmap {
     width: 100%;
     position: relative;
@@ -254,6 +306,7 @@
     box-shadow: 0px 0px 15px #03df96;
     border-radius: 10px;
 }
+
 .timeline ul li:hover {
     box-shadow: 0px 0px 35px #03df96;
 }
@@ -286,7 +339,9 @@
     margin: 10px 0 0;
     padding: 0;
     font-weight: 400;
+    font-size: 16px;
 }
+
 .whitepaper {
     margin-top: 2rem;
     display: flex;
@@ -296,18 +351,21 @@
     width: 100%;
     height: 40vh;
 }
+
 .whitepaper p {
     font-family: "Raleway", sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
     position: relative;
 }
+
 .whitepaper image {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .whitepaper .download {
     display: flex;
     justify-content: center;
@@ -317,6 +375,7 @@
     font-size: 1.188rem;
     font-weight: 700;
 }
+
 .btnpaper {
     width: 150px;
     height: 40px;
@@ -364,6 +423,7 @@
     justify-content: center;
     flex-direction: column;
 }
+
 .left h4 {
     font-size: 1.25rem;
     font-weight: 400;
@@ -375,6 +435,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .embed .right:hover {
     box-shadow: 0px 4px 62px 25px rgba(3, 223, 150, 0.24);
 }
@@ -383,7 +444,8 @@
     position: relative;
     width: 50%;
     overflow: hidden;
-    padding-top: 620px; /* 16:9 Aspect Ratio */
+    padding-top: 620px;
+    /* 16:9 Aspect Ratio */
 }
 
 .responsive-iframe {
@@ -409,6 +471,7 @@
     font-size: 17px;
     line-height: 26px;
 }
+
 .team h4 {
     font-weight: 500;
     margin: 10px 0;
@@ -432,6 +495,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .team-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -441,13 +505,16 @@
     justify-items: center;
     padding-bottom: 5rem;
 }
+
 .sub1 {
     grid-column: 1/4;
 }
+
 .sub2 {
     grid-column: 1/3;
     grid-row: 2/3;
 }
+
 .sub3 {
     grid-column: 2/4;
     grid-row: 2/3;
@@ -457,10 +524,12 @@
     grid-column: 1/2;
     grid-row: 3/4;
 }
+
 .sub5 {
     grid-column: 2/3;
     grid-row: 3/4;
 }
+
 .sub5 {
     grid-column: 3/4;
     grid-row: 3/4;
@@ -493,9 +562,11 @@
     z-index: 1;
     border: 2px solid #03df96;
 }
+
 .sub6 .img-box {
     background: black;
 }
+
 .sub6 .person {
     background: red;
 }
@@ -518,14 +589,17 @@
     object-fit: cover;
     aspect-ratio: 1/1;
 }
+
 .person span {
     background: var(--background-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .person h2 {
     font-size: 1.5rem;
 }
+
 .person h4 {
     font-size: 1rem;
 }
@@ -569,16 +643,19 @@
     align-items: center;
     justify-content: center;
     font-family: var(--bfont);
-    font-size: 1.2rem;
 }
+
 .disclaimer .fa {
     color: yellow;
 }
-.disclaimer h5 {
+
+.disclaimer p {
     text-align: center;
     font-family: var(--contarct-font);
     font-weight: 400;
-    color: grey;
+    color: white;
+    font-size: 11px;
+    line-height: 25px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -603,7 +680,11 @@
         left: -4rem;
     }
 }
+
 @media (max-width: 1024px) {
+    .bg-logo {
+        width: 50%;
+    }
     .team-container {
         width: 100%;
         grid-template-columns: repeat(2, minmax(23rem, 1fr));
@@ -612,9 +693,11 @@
     .sub1 {
         grid-column: 1/3;
     }
+
     .sub2 {
         grid-column: 1;
     }
+
     .sub3 {
         grid-column: 2;
     }
@@ -622,15 +705,19 @@
     .sub4 {
         grid-column: 1;
     }
+
     .sub5 {
         grid-column: 2;
     }
+
     .sub6 {
         grid-column: 1/3;
         grid-row: 4/5;
     }
 }
+
 @media screen and (max-width: 992px) {
+
     .main-heading {
         font-size: 65px;
         line-height: 85px;
@@ -676,9 +763,11 @@
     .box {
         flex-direction: column;
     }
+
     .box .left {
         text-align: center;
     }
+
     .container {
         position: relative;
         width: 65%;
@@ -695,6 +784,7 @@
     .main {
         height: calc(100vh - 80px - 100px);
     }
+
     .main-heading {
         font-size: 52px;
         line-height: 68px;
@@ -703,6 +793,11 @@
     .main-content {
         font-size: 19px;
         line-height: 30px;
+    }
+
+    .main h3 {
+        font-size: 22px;
+
     }
 
     .main-buttons {
@@ -732,16 +827,20 @@
         left: 3.5rem;
         right: 0;
     }
+
     .container {
         position: relative;
         width: 80%;
     }
+
     .team {
         margin-top: 6rem;
     }
+
     .team-container {
         grid-template-columns: repeat(1, minmax(15rem, 1fr));
     }
+
     .sub1,
     .sub2,
     .sub3,
@@ -755,17 +854,21 @@
     .points {
         max-width: 70%;
     }
+
     .disclaimer h4 {
         text-align: left;
     }
+
     .swiper-slide {
         opacity: 0;
         transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     }
+
     .swiper-slide-active {
         opacity: 1;
         transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     }
+
     .left h4 {
         font-size: 1rem;
     }
@@ -775,9 +878,11 @@
     .modal-links {
         max-height: 62vh;
     }
+
     .modal-links img {
         max-height: 62vh;
     }
+
     .modal-container img {
         height: 160px;
     }
@@ -785,11 +890,13 @@
     .main {
         min-height: fit-content;
     }
+
     .main-heading {
         font-size: 35px;
         line-height: 45px;
         max-width: 95%;
     }
+
     .contract {
         padding-bottom: 2rem;
     }
@@ -799,14 +906,17 @@
         font-size: 16px;
         line-height: 23px;
     }
+
     .main button {
         width: 125px !important;
         height: 40px !important;
         font-size: 1rem;
     }
+
     .contract {
         font-size: 0.9rem;
     }
+
     .timeline::before {
         top: 20px;
         left: 0px;
@@ -821,9 +931,11 @@
         left: 1rem;
         right: 0;
     }
+
     .container {
         width: 98%;
     }
+
     .disclaimer h5 {
         font-size: 0.7rem;
         text-align: left;
