@@ -109,3 +109,4 @@ const copy=()=> {
     copyText.innerHTML="Copied";
     setTimeout(()=>copyText.innerHTML=previousValue,2000);
 }
+//copy section end

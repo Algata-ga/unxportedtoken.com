@@ -5,13 +5,16 @@
     justify-content: center;
     height: max-content;
 }
+
 .chart iframe {
     width: 49%;
     height: 80vh;
 }
+
 .chart iframe:nth-child(1) {
     border-radius: 25px 0 0 25px;
 }
+
 .chart iframe:nth-child(2) {
     border-radius: 0 25px 25px 0;
 }
@@ -20,15 +23,19 @@
     body {
         overflow-y: scroll;
     }
+
     .parent {
         flex-direction: row;
     }
+
     .chart iframe {
         width: 100%;
     }
+
     .chart iframe:nth-child(1) {
         border-radius: 25px 25px 0 0;
     }
+
     .chart iframe:nth-child(2) {
         border-radius: 0 0 25px 25px;
         height: 81vh;

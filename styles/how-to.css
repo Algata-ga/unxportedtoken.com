@@ -1,60 +1,73 @@
-.howto{
+.howto {
     width: 100%;
     display: flex;
     justify-content: center;
     min-height: 80vh;
 }
-.howto .content{
-    width: min(80rem,90%);
+
+.howto .content {
+    width: min(80rem, 90%);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.howto img{
-    max-width: min(40rem,90%);
+
+.howto img {
+    max-width: min(40rem, 90%);
     align-self: center;
 }
-.howto a,h1,dl,dt{
+
+.howto a,
+h1,
+dl,
+dt {
     max-width: 100%;
 }
-.howto a{
+
+.howto a {
     color: #03df96;
     font-style: italic;
 
 }
-dl dt{
+
+dl dt {
     line-height: 20px;
     margin-top: 25px;
     font-size: 1.1rem;
 }
-dt::before{
+
+dt::before {
     content: '⬡';
     padding-right: 5px;
     color: #03df96;
     position: relative;
     top: -1px;
 }
-dd{
+
+dd {
     line-height: 20px;
     margin-top: 25px;
     font-size: 1rem;
 }
-b{
+
+b {
     overflow-wrap: anywhere;
     line-height: 28px;
 }
 
 @media screen and (max-width: 768px) {
-    h1{
+    h1 {
         font-size: 1.3rem;
     }
-    dl dt{
+
+    dl dt {
         line-height: 20px;
         margin-top: 25px;
         font-size: .9rem;
     }
-    dd{
+
+    dd {
         line-height: 20px;
         margin-top: 25px;
         font-size: .8rem;
