@@ -157,7 +157,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    index: -1;
+    z-index: -1;
 }
 .about {
     width: 100%;
