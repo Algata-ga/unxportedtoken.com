@@ -371,6 +371,7 @@
 
 .embed .right {
     box-shadow: 0px 4px 42px 16px rgba(3, 223, 150, 0.24);
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -378,7 +379,9 @@
 .embed .right:hover {
     box-shadow: 0px 4px 62px 25px rgba(3, 223, 150, 0.24);
 }
-
+.embed .box .right iframe {
+    border-radius: 25px;
+}
 .container {
     position: relative;
     width: 50%;
