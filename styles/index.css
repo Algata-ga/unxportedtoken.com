@@ -649,9 +649,11 @@
     }
 
     .timeline::before {
-        top: 20px;
-        left: 5px;
-        height: 92%;
+        display: none;
+    }
+
+    .timeline ul {
+        align-items: center;
     }
 
     .timeline ul li {
@@ -810,12 +812,6 @@
     .contract {
         font-size: 0.9rem;
     }
-    .timeline::before {
-        top: 20px;
-        left: 0px;
-        height: 92%;
-    }
-
     .timeline ul li:nth-child(odd),
     .timeline ul li:nth-child(even) {
         width: 70%;
