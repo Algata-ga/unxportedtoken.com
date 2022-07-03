@@ -277,10 +277,10 @@ a {
 
 @media screen and (max-width: 850px) {
     .heading-left {
-        transform: rotate(0);
+        transform: rotate(0deg);
     }
     .heading-right {
-        transform: rotate(0);
+        transform: rotate(0deg);
         align-self: flex-start;
     }
     .link-box {

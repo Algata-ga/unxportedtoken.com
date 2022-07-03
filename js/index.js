@@ -99,3 +99,13 @@ const tick = () => {
 tick();
 
 //Canvas hero animation - end---
+
+
+//copy contract
+const copy=()=> {
+    const copyText = document.getElementById("copy-text");
+    navigator.clipboard.writeText(copyText.innerHTML);
+    const previousValue=copyText.innerHTML;
+    copyText.innerHTML="Copied";
+    setTimeout(()=>copyText.innerHTML=previousValue,2000);
+}
