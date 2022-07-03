@@ -431,6 +431,7 @@
 
 .embed .right {
     box-shadow: 0px 4px 42px 16px rgba(3, 223, 150, 0.24);
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,7 +440,9 @@
 .embed .right:hover {
     box-shadow: 0px 4px 62px 25px rgba(3, 223, 150, 0.24);
 }
-
+.embed .box .right iframe {
+    border-radius: 25px;
+}
 .container {
     position: relative;
     width: 50%;
@@ -733,9 +736,11 @@
     }
 
     .timeline::before {
-        top: 20px;
-        left: 5px;
-        height: 92%;
+        display: none;
+    }
+
+    .timeline ul {
+        align-items: center;
     }
 
     .timeline ul li {
@@ -773,7 +778,12 @@
         width: 65%;
     }
 }
-
+@media screen and (max-width: 850px) {
+    .timeline {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
 @media screen and (min-width: 768px) {
     .points {
         max-width: 100%;
@@ -916,13 +926,6 @@
     .contract {
         font-size: 0.9rem;
     }
-
-    .timeline::before {
-        top: 20px;
-        left: 0px;
-        height: 92%;
-    }
-
     .timeline ul li:nth-child(odd),
     .timeline ul li:nth-child(even) {
         width: 70%;
