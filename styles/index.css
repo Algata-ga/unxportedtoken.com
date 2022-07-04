@@ -583,12 +583,14 @@
     -webkit-text-fill-color: transparent;
 }
 
-.person h2 {
-    font-size: 1.5rem;
+.person h4 {
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
-.person h4 {
+.person h6 {
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .latest {
