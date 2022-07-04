@@ -99,13 +99,3 @@ const tick = () => {
 tick();
 
 //Canvas hero animation - end---
-
-const copy = (value) => {
-    navigator.clipboard.writeText(value);
-    const copyText = document.getElementById("copy-text");
-    const previousValue = copyText.innerHTML;
-    if (previousValue === "Copied") return;
-    copyText.innerHTML = "Copied";
-    setTimeout(() => (copyText.innerHTML = previousValue), 2000);
-};
-
