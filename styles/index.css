@@ -26,6 +26,7 @@
     padding: 5px;
     background: #03df96;
 }
+
 .modal-container {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
@@ -34,12 +35,15 @@
     width: max-content;
     padding: 50px;
 }
+
 .modal-container img {
     height: 100%;
 }
+
 .modal-container a {
     height: 100px;
 }
+
 .modal-grid h3 {
     font-weight: bolder;
     background: rgba(0, 0, 0, 0.3);
@@ -279,6 +283,7 @@
     font-size: 1.2rem;
     text-align: left;
 }
+
 .points li::before {
     content: "⬡";
     padding-right: 5px;
@@ -350,13 +355,30 @@
     clear: both;
     text-align: right;
     right: -6rem;
+    position: relative;
 }
+
+.timeline ul li:nth-child(odd) i {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    font-size: 1.5rem;
+
+}
+
 
 .timeline ul li:nth-child(even) {
     float: right;
     clear: both;
     text-align: left;
     left: -6rem;
+}
+
+.timeline ul li:nth-child(even) i {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    font-size: 1.5rem;
 }
 
 .timeline .content h4 {
@@ -385,6 +407,7 @@
     min-height: 40vh;
     background-color: #183138;
 }
+
 .whitepaper .download {
     display: flex;
     justify-content: center;
@@ -396,37 +419,64 @@
     margin-bottom: 2rem;
 }
 
-.whitepaper .inner{
+.whitepaper .inner {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.whitepaper .inner p{
+
+.whitepaper .inner p {
     font-size: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
-.whitepaper .inner div{
+
+.whitepaper .inner div {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
-.whitepaper .inner b{
+.whitepaper .inner a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whitepaper .inner b {
     background: var(--background-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.whitepaper image {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.whitepaper-img{
+    position: relative;
 }
+.whitepaper img:hover{
+    animation: bounce .5s linear infinite ;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(25px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.whitepaper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: none;
+}
+
 
 
 .wp-icon {
@@ -441,7 +491,7 @@
     transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.extra{
+.extra {
     width: 100%;
     display: flex;
     align-items: center;
@@ -449,32 +499,57 @@
     height: auto;
     font-family: var(--bfont);
 }
-.extra-box{
+
+.extra-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
     gap: 20px;
     min-height: 30vh;
-    
-}
-.extra-left{
-    width: 90%;
-    height: auto;
-    margin-top: 20px;
-    background: rgba(78, 79, 79, 0.2);
-    padding: 16px;
-    border-radius: 16px;
-}
-.extra-right{
-    width: 90%;
-    height: auto;
-    margin-top: 20px;
-    background: rgba(78, 79, 79, 0.2);
-    padding: 16px;
-    border-radius: 16px;
 
 }
+
+.extra-left {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    background: rgba(78, 79, 79, 0.2);
+    padding: 16px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+
+}
+.icons{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.extra-right {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    background: rgba(78, 79, 79, 0.2);
+    padding: 16px;
+    border-radius: 16px;
+    position: relative;
+
+}
+
 .extra h3 {
     margin: 0;
     padding: 0;
@@ -491,6 +566,7 @@
     font-weight: 400;
     font-size: 16px;
 }
+
 
 
 
@@ -530,6 +606,7 @@
 .left h3 {
     font-size: 1.8rem;
 }
+
 .left h4 {
     font-size: 1.25rem;
     font-weight: 400;
@@ -620,6 +697,7 @@
 .sub6 .img-box {
     background: black;
 }
+
 /*
 .sub6 .person {
     background: red;
@@ -629,13 +707,16 @@
     text-align: left;
     position: relative;
 }
+
 .team-box .img-box img {
     width: 100%;
 }
+
 .team-box h6 {
     margin-top: 8px;
     margin-bottom: 16px;
 }
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -741,9 +822,11 @@
     .bg-logo {
         width: 50%;
     }
+
     .embed {
         margin-top: 100px;
     }
+
     .embed .box .right {
         margin-bottom: 120px;
     }
@@ -759,10 +842,12 @@
         font-size: 65px;
         line-height: 85px;
     }
+
     .left h3 {
         font-size: 1.5rem;
         width: 90vw;
     }
+
     .main-content {
         font-size: 24px;
         line-height: 30px;
@@ -813,11 +898,12 @@
         margin-top: 20px;
     }
 
-    .extra-box{
+    .extra-box {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        
+
     }
+
     .extra h3 {
         font-size: 1.5rem;
     }
@@ -834,12 +920,14 @@
         position: relative;
         width: 65%;
     }
+
     .modal-container {
         width: 70vw;
         max-height: 65vh;
         padding-top: 20px;
         padding-bottom: 5px;
     }
+
     .modal-container h3 {
         font-size: 1.3rem;
     }
@@ -909,17 +997,21 @@
         left: 0;
     }
 
-    .whitepaper .inner{
+    .whitepaper .inner {
         flex-direction: column;
         padding-bottom: 2rem;
     }
+
     .whitepaper .inner p {
         font-size: 1.5rem;
         width: 90vw;
     }
-    .whitepaper .inner p,.whitepaper .inner div{
+
+    .whitepaper .inner p,
+    .whitepaper .inner div {
         width: 100%;
     }
+
     .container {
         position: relative;
         width: 80%;
@@ -968,16 +1060,20 @@
     .modal-links img {
         max-height: 62vh;
     }
+
     .modal-container a {
         height: 120px;
     }
+
     .modal-container h3 {
         text-align: center;
     }
+
     .modal-container {
         width: 60vw;
         height: 70vh;
     }
+
     .main {
         min-height: fit-content;
     }

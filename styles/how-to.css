@@ -3,14 +3,16 @@
     display: flex;
     justify-content: center;
     min-height: 80vh;
+    font-family: var(--bfont)
+}
+.howto h1{
+    font-size: 2.2rem;
 }
 
 .howto .content {
     width: min(80rem, 90%);
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 
 .howto img {
@@ -34,7 +36,7 @@ dt {
 dl dt {
     line-height: 20px;
     margin-top: 25px;
-    font-size: 1.1rem;
+    font-size: 1.225rem;
 }
 
 dt::before {
@@ -48,7 +50,7 @@ dt::before {
 dd {
     line-height: 20px;
     margin-top: 25px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 b {
@@ -57,9 +59,9 @@ b {
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.3rem;
-    }
+    .howto h1{
+        font-size: 1.8rem;
+    } 
 
     dl dt {
         line-height: 20px;
