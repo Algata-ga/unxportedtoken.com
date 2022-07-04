@@ -1011,7 +1011,13 @@
     .whitepaper .inner div {
         width: 100%;
     }
-
+    .whitepaper .inner a{
+        width: 45%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .container {
         position: relative;
         width: 80%;
