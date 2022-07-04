@@ -180,6 +180,7 @@
     margin: 0 16px;
     border-radius: 8px;
     font-size: 16px;
+
 }
 
 .contract p img {
@@ -439,6 +440,60 @@
     border-radius: 25px;
     transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+.extra{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-family: var(--bfont);
+}
+.extra-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 20px;
+    min-height: 30vh;
+    
+}
+.extra-left{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    background: rgba(78, 79, 79, 0.2);
+    padding: 16px;
+    border-radius: 16px;
+}
+.extra-right{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    background: rgba(78, 79, 79, 0.2);
+    padding: 16px;
+    border-radius: 16px;
+
+}
+.extra h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.extra p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
 
 .embed {
     height: 90vh;
@@ -756,6 +811,15 @@
 
     .timeline ul li .content h3 {
         margin-top: 20px;
+    }
+
+    .extra-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .extra h3 {
+        font-size: 1.5rem;
     }
 
     .box {
