@@ -4,10 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap");
 
 :root {
-    --background-gradient: linear-gradient(96.13deg,
-            #03df96 -18.49%,
-            #00e8ff 138.6%);
-    --bg: #000;
+    --background-gradient: linear-gradient(
+        96.13deg,
+        #03df96 -18.49%,
+        #00e8ff 138.6%
+    );
+    --bg: #122c34;
     --card-bg: rgba(78, 79, 79, 0.2);
     --card-shadow: 0px 2.70045px 26.3294px rgba(0, 0, 0, 0.25);
     --contarct-font: "Noto Sans", sans-serif;
@@ -50,7 +52,33 @@ body[data-scrollable="false"] {
 *::-webkit-scrollbar {
     display: none;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+h1 {
+    font-size: 49px;
+}
+h2 {
+    font-size: 39px;
+}
+h3 {
+    font-size: 31px;
+}
+h4 {
+    font-size: 25px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+}
 .contain {
     width: min(90rem, 95%);
 }
@@ -305,7 +333,7 @@ a {
 
     .link-box {
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 0;
         top: -100%;
         display: flex;
@@ -316,10 +344,10 @@ a {
     }
 
     .open {
-        position: fixed;
-        width: 100%;
-        height: 75vh;
-        top: 70px;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -333,30 +361,10 @@ a {
         justify-content: space-evenly;
         align-content: space-between;
         padding: 0;
-        height: 95%;
-        width: 90vw;
+        height: 100vh;
+        width: 100vw;
         z-index: 1;
-        box-shadow: 0px 0px 30px rgba(22, 73, 56, 0.33);
         background-color: black;
-        border-radius: 25px;
-    }
-
-    .link-box ul::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 99vh;
-        width: 94.5vw;
-        background: black;
-        border-radius: 25px;
-        z-index: -1;
-    }
-
-    .hamburger {
-        display: block;
     }
 
     .hamburger {
@@ -366,6 +374,10 @@ a {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        position: relative;
+        z-index: 1000;
+        margin-top: 10px;
+        margin-right: 10px;
     }
 
     .hamburger span {
@@ -392,3 +404,4 @@ a {
         object-fit: cover;
     }
 }
+

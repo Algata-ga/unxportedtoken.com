@@ -1,6 +1,8 @@
 const date = new Date();
 const year = date.getFullYear();
-const copyright = year + '<strong><a href="#"> UNxPORTED<sup><i class="fa fa-copyright" aria-hidden="true"></i></sup> </a></strong>';
+const copyright =
+    year +
+    '<strong><a href="#"> UNxPORTED<sup><i class="fa fa-copyright" aria-hidden="true"></i></sup> </a></strong>';
 document.getElementById("copyright").innerHTML = copyright;
 
 const nav_toggle = () => {
