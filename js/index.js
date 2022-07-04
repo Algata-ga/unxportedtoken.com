@@ -100,13 +100,12 @@ tick();
 
 //Canvas hero animation - end---
 
-
-//copy contract
-const copy=()=> {
+const copy = (value) => {
+    navigator.clipboard.writeText(value);
     const copyText = document.getElementById("copy-text");
-    navigator.clipboard.writeText(copyText.innerHTML);
-    const previousValue=copyText.innerHTML;
-    copyText.innerHTML="Copied";
-    setTimeout(()=>copyText.innerHTML=previousValue,2000);
-}
-//copy section end
+    const previousValue = copyText.innerHTML;
+    if (previousValue === "Copied") return;
+    copyText.innerHTML = "Copied";
+    setTimeout(() => (copyText.innerHTML = previousValue), 2000);
+};
+
