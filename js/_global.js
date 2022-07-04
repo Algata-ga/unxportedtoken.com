@@ -32,3 +32,12 @@ const open_modal = (id) => {
     document.body.dataset.scrollable = false;
     modal.dataset.toggle = true;
 };
+
+const copy_to_clipboard = (value, id) => {
+    navigator.clipboard.writeText(value);
+    const copyText = document.getElementById(id);
+    const previousValue = copyText.innerHTML;
+    if (previousValue === "Copied") return;
+    copyText.innerHTML = "Copied";
+    setTimeout(() => (copyText.innerHTML = previousValue), 2000);
+};
