@@ -210,7 +210,7 @@
 
 .about {
     width: 100%;
-    min-height: 55vh;
+    height: auto;
     position: relative;
     display: flex;
     align-items: center;
@@ -357,14 +357,12 @@
     right: -6rem;
     position: relative;
 }
+.timeline ul li:nth-child(odd) .timeline-icons{
 
-.timeline ul li:nth-child(odd) i {
-    position: absolute;
-    top: 18px;
-    left: 10px;
-    font-size: 1.5rem;
-
+    left: 15px;
+    width: 50px;
 }
+
 
 
 .timeline ul li:nth-child(even) {
@@ -374,11 +372,9 @@
     left: -6rem;
 }
 
-.timeline ul li:nth-child(even) i {
-    position: absolute;
-    top: 18px;
-    right: 10px;
-    font-size: 1.5rem;
+.timeline ul li:nth-child(even) .timeline-icons{
+    
+    width: 50px;
 }
 
 .timeline .content h4 {
@@ -931,6 +927,9 @@
     .modal-container h3 {
         font-size: 1.3rem;
     }
+    .whitepaper {
+        min-height: 28vh;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -997,6 +996,7 @@
         left: 0;
     }
 
+    
     .whitepaper .inner {
         flex-direction: column;
         padding-bottom: 2rem;
