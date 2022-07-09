@@ -118,9 +118,11 @@
     margin-bottom: 5px;
 }
 
-.main h6 {
+.main h2 {
     margin-top: 1px;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .main p b {
@@ -184,7 +186,6 @@
     margin: 0 16px;
     border-radius: 8px;
     font-size: 16px;
-
 }
 
 .contract p img {
@@ -357,13 +358,10 @@
     right: -6rem;
     position: relative;
 }
-.timeline ul li:nth-child(odd) .timeline-icons{
-
+.timeline ul li:nth-child(odd) .timeline-icons {
     left: 15px;
     width: 50px;
 }
-
-
 
 .timeline ul li:nth-child(even) {
     float: right;
@@ -372,8 +370,7 @@
     left: -6rem;
 }
 
-.timeline ul li:nth-child(even) .timeline-icons{
-    
+.timeline ul li:nth-child(even) .timeline-icons {
     width: 50px;
 }
 
@@ -436,7 +433,7 @@
     justify-content: center;
     width: 50%;
 }
-.whitepaper .inner a{
+.whitepaper .inner a {
     width: 100%;
     height: auto;
     display: flex;
@@ -448,32 +445,30 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.whitepaper-img{
+.whitepaper-img {
     position: relative;
 }
-.whitepaper img:hover{
-    animation: bounce .5s linear infinite ;
+.whitepaper img:hover {
+    animation: bounce 0.5s linear infinite;
 }
 @keyframes bounce {
-    0%{
+    0% {
         transform: translateY(0px);
     }
-    50%{
+    50% {
         transform: translateY(25px);
     }
-    100%{
+    100% {
         transform: translateY(0px);
     }
 }
 
-.whitepaper img{
+.whitepaper img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     overflow: none;
 }
-
-
 
 .wp-icon {
     font-size: 200px;
@@ -503,7 +498,6 @@
     justify-items: center;
     gap: 20px;
     min-height: 30vh;
-
 }
 
 .extra-left {
@@ -515,9 +509,8 @@
     border-radius: 16px;
     position: relative;
     overflow: hidden;
-
 }
-.icons{
+.icons {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -543,7 +536,6 @@
     padding: 16px;
     border-radius: 16px;
     position: relative;
-
 }
 
 .extra h3 {
@@ -562,10 +554,6 @@
     font-weight: 400;
     font-size: 16px;
 }
-
-
-
-
 
 .embed {
     height: 90vh;
@@ -690,15 +678,6 @@
     z-index: 1;
 }
 
-.sub6 .img-box {
-    background: black;
-}
-
-/*
-.sub6 .person {
-    background: red;
-}
-*/
 .team-box .person {
     text-align: left;
     position: relative;
@@ -708,7 +687,7 @@
     width: 100%;
 }
 
-.team-box h6 {
+.team-box h5 {
     margin-top: 8px;
     margin-bottom: 16px;
 }
@@ -732,7 +711,7 @@
     font-weight: bolder;
 }
 
-.person h6 {
+.person h5 {
     font-size: 1rem;
     font-weight: 600;
 }
@@ -897,7 +876,6 @@
     .extra-box {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-
     }
 
     .extra h3 {
@@ -996,7 +974,6 @@
         left: 0;
     }
 
-    
     .whitepaper .inner {
         flex-direction: column;
         padding-bottom: 2rem;
@@ -1011,14 +988,14 @@
     .whitepaper .inner div {
         width: 100%;
     }
-    .whitepaper .inner a{
+    .whitepaper .inner a {
         width: 45%;
         height: 45%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .whitepaper .inner img{
+    .whitepaper .inner img {
         width: 85%;
     }
     .container {
