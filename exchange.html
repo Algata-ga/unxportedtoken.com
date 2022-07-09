@@ -1,90 +1,136 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes."
+        />
+        <meta property="og:title" content="UnxPorted Token - UNXP" />
+        <meta
+            property="og:description"
+            content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes."
+        />
+        <meta
+            name="image"
+            property="og:image"
+            content="https://unxportedtoken.com/assets/logo.png.webp"
+        />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="71" />
+        <meta property="og:image:height" content="71" />
+        <meta name="“twitter:card”" content="“summary”" />
+        <meta name="“twitter:site”" content="“UNxPORTED" CEO” />
+        <meta name="“twitter:creator”" content="“@unxportedceo”" />
+        <meta
+            name="keywords"
+            content="UnxPorted Unexported UNXP Swap Exchange Trade UNxP UNxPORTED Cryptocurrency NFT Assest Investment Faith Cryptography Market Community Moon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/exchange.css" />
+        <script
+            src="https://kit.fontawesome.com/025c12b0bf.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.svg"
+            type="image/x-icon"
+        />
+        <title>Swap | UNXP : UNxPORTED TOKEN</title>
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"
-        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes." />
-    <meta property="og:title" content="UnxPorted Token - UNXP" />
-    <meta property="og:description"
-        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes." />
-    <meta name="image" property="og:image" content="https://unxportedtoken.com/assets/logo.png.webp" />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:width" content="71" />
-    <meta property="og:image:height" content="71" />
-    <meta name=“twitter:card” content=“summary” />
-    <meta name=“twitter:site” content=“UNxPORTED CEO” />
-    <meta name=“twitter:creator” content=“@unxportedceo” />
-    <meta name="keywords"
-        content="UnxPorted Unexported UNXP Swap Exchange Trade UNxP UNxPORTED Cryptocurrency NFT Assest Investment Faith Cryptography Market Community Moon" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/exchange.css" />
-    <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
-    <title>Swap | UNXP : UNxPORTED TOKEN</title>
-</head>
-
-<body data-scrollable="true">
-
-    <header>
-        <nav class="contain">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./assets/logo.svg" alt="logo">
-                    <h3 class="company-name">UNxPORTED</h3>
+    <body data-scrollable="true">
+        <header>
+            <nav class="contain">
+                <a href="/">
+                    <div class="nav-logo">
+                        <img src="./assets/logo.svg" alt="logo" />
+                        <h3 class="company-name">UNxPORTED</h3>
+                    </div>
+                </a>
+                <div id="links" class="link-box">
+                    <ul>
+                        <li><a href="/" onclick="close_nav()">Home</a></li>
+                        <li>
+                            <a href="#Roadmap" onclick="close_nav()">Roadmap</a>
+                        </li>
+                        <li>
+                            <a href="#Chart" onclick="close_nav()">Chart</a>
+                        </li>
+                        <li><a href="#Team" onclick="close_nav()">Team</a></li>
+                        <li>
+                            <a
+                                href="mailto:support@unxportedtoken.com"
+                                onclick="close_nav()"
+                                target="_blank"
+                                >Support</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <div id="links" class="link-box">
-                <ul>
-                    <li><a href="/" onclick="close_nav()">Home</a></li>
-                    <li><a href="#Roadmap" onclick="close_nav()">Roadmap</a></li>
-                    <li><a href="#Chart" onclick="close_nav()">Chart</a></li>
-                    <li><a href="#Team" onclick="close_nav()">Team</a></li>
-                    <li><a href="mailto:support@unxportedtoken.com" onclick="close_nav()" target="_blank">Support</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="hamburger" onclick="nav_toggle()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-
-
-    </header>
-    <div class="parent">
-        <div class="contain">
-            <div class="chart">
-                <iframe frameBorder="0" scrolling="yes"
-                    src="https://coinbrain.com/embed/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a?chainId=56&theme=custom&accent=03df96&padding=16&background=000000&chart=1&trades=1"></iframe>
-                <iframe frameBorder="0" scrolling="yes"
-                    src="https://coinbrain.com/embed/trade?theme=custom&accent=03df96&background=000000&padding=16&chainId=56&inputAddress=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&outputAddress=0x5371e49efe295a90cadc5a1ae85a77a2b620da1a"></iframe>
+                <div class="hamburger" onclick="nav_toggle()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <div class="parent">
+            <div class="contain">
+                <div class="chart">
+                    <iframe
+                        frameborder="0"
+                        scrolling="yes"
+                        src="https://coinbrain.com/embed/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a?chainId=56&theme=custom&accent=03df96&padding=16&background=000000&chart=1&trades=1"
+                    ></iframe>
+                    <iframe
+                        frameborder="0"
+                        scrolling="yes"
+                        src="https://coinbrain.com/embed/trade?theme=custom&accent=03df96&background=000000&padding=16&chainId=56&inputAddress=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&outputAddress=0x5371e49efe295a90cadc5a1ae85a77a2b620da1a"
+                    ></iframe>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div id="copyright"></div>
-        <div class="flinks">
-            <a href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/"
-                class="link"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/unxportedceo" class="link"><i class="fa-brands fa-twitter"></i></i></a>
-            <a href="https://telegram.me/unxported" class="link"><i class="fa-brands fa-telegram"
-                    alt="Telegram"></i></a>
-            <a href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4" class="link"></i><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w" class="link"><i
-                    class="fa-brands fa-youtube" alt="Youtube"></i></i></a>
-            <a href="https://discord.gg/4kkZHMjMG2" class="link"><i class="fa-brands fa-discord" alt="Discord"></i></a>
+        <footer>
+            <div id="copyright"></div>
+            <div class="flinks">
+                <a
+                    href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/"
+                    class="link"
+                    ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/unxportedceo" class="link"
+                    ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://telegram.me/unxported" class="link"
+                    ><i class="fa-brands fa-telegram" alt="Telegram"></i
+                ></a>
+                <a
+                    href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4"
+                    class="link"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                    href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w"
+                    class="link"
+                    ><i class="fa-brands fa-youtube" alt="Youtube"></i
+                ></a>
+                <a href="https://discord.gg/4kkZHMjMG2" class="link"
+                    ><i class="fa-brands fa-discord" alt="Discord"></i
+                ></a>
+            </div>
+        </footer>
+        <div class="algata">
+            Designed & Developed by
+            <a target="_blank" href="http://algata.in">Algata</a>
         </div>
-    </footer>
-    <div class="algata">
-        Designed & Developed by <a target="_blank" href="http://algata.in">Algata</a>
-    </div>
-    <script src="./js/_global.js"></script>
-</body>
-
+        <script src="./js/_global.js"></script>
+    </body>
 </html>

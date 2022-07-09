@@ -1,92 +1,137 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes."
+        />
+        <meta property="og:title" content="UnxPorted Token - UNXP" />
+        <meta
+            property="og:description"
+            content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes."
+        />
+        <meta
+            name="image"
+            property="og:image"
+            content="https://unxportedtoken.com/assets/logo.png.webp"
+        />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="71" />
+        <meta property="og:image:height" content="71" />
+        <meta name="“twitter:card”" content="“summary”" />
+        <meta name="“twitter:site”" content="“UNxPORTED" CEO” />
+        <meta name="“twitter:creator”" content="“@unxportedceo”" />
+        <meta
+            name="keywords"
+            content=" Pancake Swap UnxPorted Unexported UNXP Swap Exchange Trade UNxP UNxPORTED Cryptocurrency NFT Assest Investment Faith Cryptography Market Community Moon"
+        />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/how-to.css" />
+        <script
+            src="https://kit.fontawesome.com/025c12b0bf.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Pancake Swap Setup | UNXP</title>
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"
-        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes." />
-    <meta property="og:title" content="UnxPorted Token - UNXP" />
-    <meta property="og:description"
-        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes." />
-    <meta name="image" property="og:image" content="https://unxportedtoken.com/assets/logo.png.webp" />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:width" content="71" />
-    <meta property="og:image:height" content="71" />
-    <meta name=“twitter:card” content=“summary” />
-    <meta name=“twitter:site” content=“UNxPORTED CEO” />
-    <meta name=“twitter:creator” content=“@unxportedceo” />
-    <meta name="keywords"
-        content=" Pancake Swap UnxPorted Unexported UNXP Swap Exchange Trade UNxP UNxPORTED Cryptocurrency NFT Assest Investment Faith Cryptography Market Community Moon" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/how-to.css" />
-    <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
-    <title>Pancake Swap Setup | UNXP</title>
-</head>
-
-<body data-scrollable="true">
-    <header>
-        <nav class="contain">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./assets/logo.svg" alt="logo">
-                    <h3 class="company-name">UNxPORTED</h3>
+    <body data-scrollable="true">
+        <header>
+            <nav class="contain">
+                <a href="/">
+                    <div class="nav-logo">
+                        <img src="./assets/logo.svg" alt="logo" />
+                        <h3 class="company-name">UNxPORTED</h3>
+                    </div>
+                </a>
+                <div id="links" class="link-box">
+                    <ul>
+                        <li><a href="/" onclick="close_nav()">Home</a></li>
+                        <li>
+                            <a href="/#Roadmap" onclick="close_nav()"
+                                >Roadmap</a
+                            >
+                        </li>
+                        <li>
+                            <a href="/#Chart" onclick="close_nav()">Chart</a>
+                        </li>
+                        <li>
+                            <a href="/exchange.html" target="_blank">Swap</a>
+                        </li>
+                        <li><a href="/#Team" onclick="close_nav()">Team</a></li>
+                        <li>
+                            <a
+                                href="mailto:support@unxportedtoken.com"
+                                onclick="close_nav()"
+                                target="_blank"
+                                >Support</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <div id="links" class="link-box">
-                <ul>
-                    <li><a href="/" onclick="close_nav()">Home</a></li>
-                    <li><a href="/#Roadmap" onclick="close_nav()">Roadmap</a></li>
-                    <li><a href="/#Chart" onclick="close_nav()">Chart</a></li>
-                    <li><a href="/exchange.html" target="_blank">Swap</a></li>
-                    <li><a href="/#Team" onclick="close_nav()">Team</a></li>
-                    <li><a href="mailto:support@unxportedtoken.com" onclick="close_nav()" target="_blank">Support</a>
-                    </li>
-                </ul>
+                <div class="hamburger" onclick="nav_toggle()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <div class="howto">
+            <div class="content">
+                <h1>How to setup Pancake Swap for UNXP (UNxPORTED Token) ?</h1>
+                <img src="./assets/color-white.png.webp" alt="Pancake" />
+                <dl>
+                    <dt>
+                        Go to pancake swap
+                        <a href="https://pancakeswap.finance/swap">here</a>
+                    </dt>
+                    <dt>
+                        Add the UNXP address :
+                        <b
+                            id="copy-text"
+                            onclick="copy_to_clipboard('0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A','copy-text')"
+                            >0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</b
+                        >
+                    </dt>
+                </dl>
             </div>
-            <div class="hamburger" onclick="nav_toggle()">
-                <span></span>
-                <span></span>
-                <span></span>
+        </div>
+        <footer>
+            <div id="copyright"></div>
+            <div class="flinks">
+                <a
+                    href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/"
+                    class="link"
+                    ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/unxportedceo" class="link"
+                    ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://telegram.me/unxported" class="link"
+                    ><i class="fa-brands fa-telegram" alt="Telegram"></i
+                ></a>
+                <a
+                    href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4"
+                    class="link"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                    href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w"
+                    class="link"
+                    ><i class="fa-brands fa-youtube" alt="Youtube"></i
+                ></a>
+                <a href="https://discord.gg/4kkZHMjMG2" class="link"
+                    ><i class="fa-brands fa-discord" alt="Discord"></i
+                ></a>
             </div>
-
-        </nav>
-
-
-    </header>
-    <div class="howto">
-        <div class="content">
-            <h1>How to setup Pancake Swap for UNXP (UNxPORTED Token) ? </h1>
-            <img src="./assets/color-white.png.webp" alt="Pancake" />
-            <dl>
-                <dt>Go to pancake swap <a href="https://pancakeswap.finance/swap">here</a></dt>
-                <dt>Add the UNXP address : <b id="copy-text"
-                        onclick="copy_to_clipboard('0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A','copy-text')">0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</b>
-                </dt>
-            </dl>
+        </footer>
+        <div class="algata">
+            Designed & Developed by
+            <a target="_blank" href="http://algata.in">Algata</a>
         </div>
-    </div>
-    <footer>
-        <div id="copyright"></div>
-        <div class="flinks">
-            <a href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/"
-                class="link"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/unxportedceo" class="link"><i class="fa-brands fa-twitter"></i></i></a>
-            <a href="https://telegram.me/unxported" class="link"><i class="fa-brands fa-telegram"
-                    alt="Telegram"></i></a>
-            <a href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4" class="link"></i><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w" class="link"><i
-                    class="fa-brands fa-youtube" alt="Youtube"></i></i></a>
-            <a href="https://discord.gg/4kkZHMjMG2" class="link"><i class="fa-brands fa-discord" alt="Discord"></i></a>
-        </div>
-    </footer>
-    <div class="algata">
-        Designed & Developed by <a target="_blank" href="http://algata.in">Algata</a>
-    </div>
 
-    <script src="./js/_global.js"></script>
-</body>
-
+        <script src="./js/_global.js"></script>
+    </body>
 </html>

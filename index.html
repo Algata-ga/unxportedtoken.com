@@ -1,360 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes. We are building an online universe to influence the actions of the crypto world. We are looking for early adopters people who have intentions to make progress in the technical world, to take control of the future."
+        />
+        <meta property="og:title" content="UnxPorted Token - UNXP" />
+        <meta
+            property="og:description"
+            content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes. We are building an online universe to influence the actions of the crypto world. We are looking for early adopters people who have intentions to make progress in the technical world, to take control of the future."
+        />
+        <meta
+            name="image"
+            property="og:image"
+            content="https://unxportedtoken.com/assets/logo.png.webp"
+        />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="71" />
+        <meta property="og:image:height" content="71" />
+        <meta name="“twitter:card”" content="“summary”" />
+        <meta name="“twitter:site”" content="“UNxPORTED" CEO” />
+        <meta name="“twitter:creator”" content="“@unxportedceo”" />
+        <meta
+            name="keywords"
+            content="UnxPorted Unexported UNXP UNxP UNxPORTED Cryptocurrency NFT Assest Investment Faith Cryptography Market Community Moon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.svg"
+            type="image/x-icon"
+        />
+        <title>UNXP : UNxPORTED TOKEN</title>
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description"
-        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes. We are building an online universe to influence the actions of the crypto world. We are looking for early adopters people who have intentions to make progress in the technical world, to take control of the future." />
-    <meta property="og:title" content="UnxPorted Token - UNXP" />
-    <meta property="og:description"
-        content="UnxPorted Token ( UNXP ) represents a tradable asset or utility that resides on its own blockchain and allows a user to use it  for legit investments and economic purposes. We are building an online universe to influence the actions of the crypto world. We are looking for early adopters people who have intentions to make progress in the technical world, to take control of the future." />
-    <meta name="image" property="og:image" content="https://unxportedtoken.com/assets/logo.png.webp" />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:width" content="71" />
-    <meta property="og:image:height" content="71" />
-    <meta name=“twitter:card” content=“summary” />
-    <meta name=“twitter:site” content=“UNxPORTED CEO” />
-    <meta name=“twitter:creator” content=“@unxportedceo” />
-    <meta name="keywords"
-        content="UnxPorted Unexported UNXP UNxP UNxPORTED Cryptocurrency NFT Assest Investment Faith Cryptography Market Community Moon" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
-    <title>UNXP : UNxPORTED TOKEN</title>
-</head>
-
-<body data-scrollable="true">
-    <header>
-        <nav class="contain">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./assets/logo.svg" alt="logo">
-                    <h3 class="company-name">UNxPORTED</h3>
+    <body data-scrollable="true">
+        <header>
+            <nav class="contain">
+                <a href="/">
+                    <div class="nav-logo">
+                        <img src="./assets/logo.svg" alt="logo" />
+                        <h3 class="company-name">UNxPORTED</h3>
+                    </div>
+                </a>
+                <div id="links" class="link-box">
+                    <ul>
+                        <li>
+                            <a href="#About" onclick="close_nav()">About</a>
+                        </li>
+                        <li>
+                            <a href="#Roadmap" onclick="close_nav()">Roadmap</a>
+                        </li>
+                        <li>
+                            <a href="#Chart" onclick="close_nav()">Chart</a>
+                        </li>
+                        <li>
+                            <a href="/exchange.html" target="_blank">Swap</a>
+                        </li>
+                        <li><a href="#Team" onclick="close_nav()">Team</a></li>
+                        <li>
+                            <a
+                                href="mailto:support@unxportedtoken.com"
+                                onclick="close_nav()"
+                                target="_blank"
+                                >Support</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <div id="links" class="link-box">
-                <ul>
-                    <li><a href="#About" onclick="close_nav()">About</a></li>
-                    <li><a href="#Roadmap" onclick="close_nav()">Roadmap</a></li>
-                    <li><a href="#Chart" onclick="close_nav()">Chart</a></li>
-                    <li><a href="/exchange.html" target="_blank">Swap</a></li>
-                    <li><a href="#Team" onclick="close_nav()">Team</a></li>
-                    <li><a href="mailto:support@unxportedtoken.com" onclick="close_nav()" target="_blank">Support</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="hamburger" onclick="nav_toggle()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+                <div class="hamburger" onclick="nav_toggle()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <div class="hero">
+            <div class="main contain">
+                <h1 class="main-heading">UNxPORTED TOKEN</h1>
+                <h2>United By Faith</h2>
 
-
-    </header>
-    <div class="hero">
-        <div class="main contain">
-            <h1 class="main-heading">
-                UNxPORTED
-                TOKEN
-            </h1>
-            <h2> United By Faith</h2>
-
-            <p class="main-content">
-                <b>UNXP </b>represents a tradable asset or utility that resides on its own blockchain and allows users to do legit investments for economic purposes.
-            </p>
-            <div class="main-buttons">
-                <button class="mb" onclick="open_modal('wallet-modal')">Trade</button>
-            </div>
-            <div class="contract">
-                <p>Contract Address : <span id="copy-text"
-                        onclick="copy_to_clipboard('0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A','copy-text')">0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</span><img
-                        src="./assets//metamask-fox.svg" alt=""></p>
-            </div>
-        </div>
-
-        <div class="modal" data-toggle="false" id="wallet-modal">
-
-            <div class="modal-container modal-grid">
-
-                <div>
-                    <h3>Wallets and Exchanges</h3>
-                    <button onclick="close_modal('wallet-modal')"><i class="fa fa-times" aria-hidden="true"></i>
+                <p class="main-content">
+                    <b>UNXP</b> represents a tradable utility and best crypto
+                    asset that resides on its unique blockchain and allows
+                    investors to do investments for profitable purposes.
+                </p>
+                <div class="main-buttons">
+                    <button class="mb" onclick="open_modal('wallet-modal')">
+                        Trade
                     </button>
                 </div>
-                <div class="modal-links">
-                    <a href="/How-to-setup-metamask-to-trade-UNXP.html">
-                        <img src="./assets/metamask-fox.svg" alt="Metamask" />
-                    </a>
-                    <a href="/How-to-setup-trust-wallet-to-trade-UNXP.html">
-                        <img src="./assets/TWT.svg" alt="Trust Wallet" />
-                    </a>
-                    <a href="/How-to-setup-pancake-swap-to-trade-UNXP.html">
-                        <img src="./assets/pan cake swap.png.webp" alt="Pancake Swap" />
-                    </a>
-                    <a href="https://poocoin.app/tokens/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a">
-                        <img src="./assets/poocoin-poocoin-logo.png.webp" alt="PooCoin" />
-                    </a>
-                    <a href="https://flooz.trade/trade/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a?network=bsc">
-                        <img src="./assets/flooz.jpg.webp" alt="Flooz" />
-                    </a>
-                    <a href="https://coinbrain.com/coins/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a">
-                        <img src="./assets/coinbrain.png.webp" alt="coinbrain" />
-                    </a>
+                <div class="contract">
+                    <p>
+                        Contract Address :
+                        <span
+                            id="copy-text"
+                            onclick="copy_to_clipboard('0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A','copy-text')"
+                            >0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A</span
+                        ><img src="./assets//metamask-fox.svg" alt="" />
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal" data-toggle="false" id="wallet-modal">
+                <div class="modal-container modal-grid">
+                    <div>
+                        <h3>Wallets and Exchanges</h3>
+                        <button onclick="close_modal('wallet-modal')">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-links">
+                        <a href="/How-to-setup-metamask-to-trade-UNXP.html">
+                            <img
+                                src="./assets/metamask-fox.svg"
+                                alt="Metamask"
+                            />
+                        </a>
+                        <a href="/How-to-setup-trust-wallet-to-trade-UNXP.html">
+                            <img src="./assets/TWT.svg" alt="Trust Wallet" />
+                        </a>
+                        <a href="/How-to-setup-pancake-swap-to-trade-UNXP.html">
+                            <img
+                                src="./assets/pan cake swap.png.webp"
+                                alt="Pancake Swap"
+                            />
+                        </a>
+                        <a
+                            href="https://poocoin.app/tokens/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a"
+                        >
+                            <img
+                                src="./assets/poocoin-poocoin-logo.png.webp"
+                                alt="PooCoin"
+                            />
+                        </a>
+                        <a
+                            href="https://flooz.trade/trade/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a?network=bsc"
+                        >
+                            <img src="./assets/flooz.jpg.webp" alt="Flooz" />
+                        </a>
+                        <a
+                            href="https://coinbrain.com/coins/0x5371e49efe295a90cadc5a1ae85a77a2b620da1a"
+                        >
+                            <img
+                                src="./assets/coinbrain.png.webp"
+                                alt="coinbrain"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <canvas id="canvas" class="particle-bg"></canvas>
+        </div>
+
+        <div class="about" id="About">
+            <div class="content-box contain">
+                <h2 class="heading-right">about</h2>
+                <div class="box">
+                    <div class="about-logo">
+                        <img src="./assets/logo.svg" alt="" />
+                    </div>
+                    <div class="about-right">
+                        <h3 class="content">
+                            We are building an online universe to influence the
+                            actions of the crypto world . We are looking for
+                            early adopters people who have intentions to make
+                            progress in the technical world to take control of
+                            the future . For the first phase we give early
+                            access to the layer one token as the ticket to the
+                            moon
+                        </h3>
+                        <ul class="points">
+                            <li>To make DAPPs</li>
+                            <li>
+                                Can be converted into contract coins like NFT
+                            </li>
+                            <li>Tradable for purchasing</li>
+                            <li>Access to passive income</li>
+                            <li>Refferal rewards</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <canvas id="canvas" class="particle-bg"></canvas>
-    </div>
 
-    <div class="about" id="About">
+        <div class="roadmap" id="Roadmap">
+            <div class="content-box contain">
+                <h2 class="heading-left">roadmap</h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <img
+                                    class="timeline-icons"
+                                    src="./assets/launch.svg"
+                                    alt="timeline-icons"
+                                />
+                                <h3>Launch & Marketing</h3>
+                                <p>
+                                    To have a successful launch, we're reaching
+                                    out to the most habituated platforms for
+                                    crypto. Telegram, Twitter, Facebook, and
+                                    Instagram.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <img
+                                    class="timeline-icons"
+                                    src="./assets/listing.svg"
+                                    alt="timeline-icons"
+                                />
+                                <h3>Listings & Marketing</h3>
 
-        <div class=" content-box contain">
-            <h2 class="heading-right">about</h2>
-            <div class="box">
-                <div class="about-logo">
-                    <img src="./assets/logo.svg" alt="">
-                </div>
-                <div class="about-right">
-                    <h3 class="content">We are building an online universe to influence the actions of the crypto world
-                        . We
-                        are
-                        looking for early adopters people who have intentions to make progress in the technical world to
-                        take
-                        control of the future
-                        . For the first phase we give early access to the layer one token as the ticket to the moon</h3>
-                    <ul class="points">
-                        <li>To make DAPPs </li>
-                        <li>Can be converted into contract coins like NFT</li>
-                        <li>Tradable for purchasing</li>
-                        <li>Access to passive income</li>
-                        <li>Refferal rewards</li>
+                                <p>
+                                    Applying for Coinvoting web spots(
+                                    Coinsniper, Coindiscovery, Coinhut,
+                                    Coinscope, Gemfinder, Coinmooner,
+                                    CoinHunters, CoinArena, CoinGods,
+                                    CoinAlpha), Starting Banner Advertisements
+                                    on crypto-related Websites. Working with
+                                    influencers for further exposure.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <img
+                                    class="timeline-icons"
+                                    src="./assets/develop.svg"
+                                    alt="timeline-icons"
+                                />
+                                <h3>Development & Marketing</h3>
+                                <p>
+                                    Applying for listing at Coinmarketcup and
+                                    Coingecko and for Exchange listers like
+                                    LBank,Gate.io and FTX. Development of Own
+                                    exchange for BNB Classic( BNBC) with Staking
+                                    & framing and Lottery. riveting on further
+                                    Media papers on big journals like yahoo,
+                                    Bloomberg, business insider, and
+                                    further.10,000 Holders
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <img
+                                    class="timeline-icons"
+                                    src="./assets/exchange.svg"
+                                    alt="timeline-icons"
+                                />
+                                <h3>Exchanges & Marketing</h3>
+                                <p>
+                                    Applying for Exchange's Bitmart, Poloniex
+                                    and others. The community will vote on which
+                                    Applying for Exchange listings Bitmart,
+                                    Poloniex and others. The community will
+                                    bounce vote on which accepted Exchanges we
+                                    will list. Bigger Influencers are partnered
+                                    to promote us. NFT Business Launch of NFT
+                                    Games with integrated Burn and Play2Earn
+                                    Features. Everything to assure a high daily
+                                    trading volume to give our Holders the
+                                    perfect prices possible 50,000 Holders Burn
+                                    10 of total supply.
+                                </p>
+                            </div>
+                        </li>
+                        <div style="clear: both"></div>
                     </ul>
                 </div>
             </div>
         </div>
 
-    </div>
+        <section class="whitepaper" id="Whitepaper">
+            <div class="download contain">
+                <h2 class="heading-right">Whitepaper</h2>
+                <div class="inner">
+                    <p><b>UNXP&nbsp;</b> Whitepaper v1.0</p>
+                    <div>
+                        <a
+                            title="Whitepaper"
+                            href="./assets/UnxPorted Token Whitepaper.pdf"
+                            target="_blank"
+                            download="UnxPorted Token Whitepaper"
+                        >
+                            <div class="whitepaper-img">
+                                <img src="./assets/whitepap.svg" alt="" /></div
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="roadmap" id="Roadmap">
-        <div class="content-box contain">
-            <h2 class="heading-left">roadmap</h2>
-            <div class="timeline">
-                <ul>
-                    <li>
-                        <div class="content">
-                            <img class="timeline-icons" src="./assets/launch.svg" alt="timeline-icons">
-                            <h3>Launch & Marketing</h3>
-                            <p>To have a successful start, we are reaching out to the most used platforms for crypto.
-                                Telegram,
-                                Twitter, Facebook and Instagram.</p>
+        <div class="extra">
+            <div class="contain">
+                <h2 class="heading-left">dev</h2>
+                <div class="extra-box">
+                    <div class="extra-left">
+                        <h3>Master plan</h3>
+                        <img class="icons" src="./assets/plan.svg" alt="plan" />
+
+                        <p>
+                            We've some unique properties and specific plans to
+                            make a healthy community. Making our unique web
+                            exchange, our team will do a legal transfer when our
+                            community is ready to continue the grow and win
+                            together. Rewards to our community on a daily base
+                            on their performances. We're all set to do community
+                            expansion, from several countries while we make a
+                            global community as the initial foundation.
+                        </p>
+                    </div>
+                    <div class="extra-right">
+                        <h3>Security</h3>
+                        <img
+                            class="icons"
+                            src="./assets/loock.svg"
+                            alt="lock"
+                        />
+                        <p>
+                            Our team has put security above all differently, as
+                            we're in the channel to be fully audited by Certik
+                            and Fairyproof
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="embed" id="Chart">
+            <div class="content-box contain">
+                <h2 class="heading-right">swap</h2>
+                <div class="box">
+                    <div class="left">
+                        <h3>UNxPORTED Token - UNXP Chart</h3>
+                        <h4>To the moon &nbsp;&nbsp; 🚀</h4>
+                    </div>
+                    <div class="right container">
+                        <iframe
+                            title="UNXP Chart - Coin Brain"
+                            class="responsive-iframe"
+                            frameborder="0"
+                            scrolling="yes"
+                            src="https://coinbrain.com/coins/0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A/lite?theme=custom&accent=1af4b3&padding=32&background=000000"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team" id="Team">
+            <div class="content-box contain">
+                <h2 class="heading-left">Team</h2>
+                <div class="team-container">
+                    <div class="team-box sub1">
+                        <div class="img-box">
+                            <img src="./assets/ceoo.png.webp" alt="" />
                         </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <img class="timeline-icons" src="./assets/listing.svg" alt="timeline-icons">
-                            <h3>Listings & Marketing</h3>
-                            <p>Applying for Coinvoting Sites (Coinsniper, Coindiscovery, Coinhut, Coinscope, Gemfinder,
-                                Coinmooner,
-                                CoinHunters, CoinArena, CoinGods, CoinAlpha), Starting Banner Ads on cryptorelated
-                                Websites. Working with
-                                influencers for more exposure.</p>
+                        <div class="person">
+                            <h3>Rotz</h3>
+                            <h4><span>CEO</span>,<br />UNxPORTED</h4>
                         </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <img class="timeline-icons" src="./assets/develop.svg" alt="timeline-icons">
-                            <h3>Development & Marketing</h3>
-                            <p>Applying for listing at Coinmarketcup and Coingecko.
-                                Applying for Exchange listings LBank, Gate.io and FTX.
-                                Development of Own Swap for BNB Classic (BNBC) with Staking & Farming and Lottery.
-                                Focussing on more Media
-                                Articles on big newspapers like, yahoo, bloomberg, businessinsider and more.
-                                10,000 Holders</p>
+                    </div>
+                    <div class="team-box sub2">
+                        <div class="img-box">
+                            <img src="./assets/cfo.png.webp" alt="" />
                         </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <img class="timeline-icons" src="./assets/exchange.svg" alt="timeline-icons">
-                            <h3>Exchanges & Marketing</h3>
-                            <p>Applying for Exchange listings Bitmart, Poloniex and others. Community will vote on which
-                            <p>Applying for Exchangelistings Bitmart, Poloniex and others. Community will vote on which
-                                accepted Exchanges
-                                we will list. Bigger Influencers are partnered to promote us.
-                                NFT Business
-                                Launch of NFT Games with integrated Burn and Play2Earn Features. Everything to assure a
-                                high daily
-                                tradingvolume to give our Holders the best rewards possible.
-                                50,000 Holders
-                                Burn 10% of total supply.</p>
+                        <div class="person">
+                            <h3>Anil Raj</h3>
+                            <h4><span>CFO</span>,<br />UNxPORTED</h4>
                         </div>
-                    </li>
-                    <div style="clear: both;"></div>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <section class="whitepaper" id="Whitepaper">
-        <div class="download contain">
-            <h2 class="heading-right">Whitepaper</h2>
-            <div class="inner">
-                <p><b>UNXP&nbsp;</b> Whitepaper v1.0</p>
-                <div>
-                    <a title="Whitepaper" href="./assets/UnxPorted Token Whitepaper.pdf" target="_blank"
-                        download="UnxPorted Token Whitepaper">
-                        <div class="whitepaper-img"><img src="./assets/whitepap.svg" alt=""></div></a>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <div class="extra">
-        <div class="contain">
-            <h2 class="heading-left">dev</h2>
-            <div class="extra-box">
-                <div class="extra-left">
-                    <h3>Master plan</h3><img class="icons" src="./assets/plan.svg" alt="plan">
-
-                    <p>We have some unique properties.
-                        We have specific plans to build a healthy community. We have our own web swap, it is possible that we will do a legit transfer when our community is
-                        ready to continue the win together. Giveaways to our community on weekly basis on their performances.
-                        We have best Security & we have built a strong road map. We are all set do community expansion, from several countries while we build a global community as
-                        the intial foundation .</p>
-                </div>
-                <div class="extra-right">
-                    <h3>Security</h3><img class="icons" src="./assets/loock.svg" alt="lock">
-                    <p>We put security above all else, as we are in the pipeline to completely audited Certik and
-                        Fairyproof</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="embed" id="Chart">
-        <div class="content-box contain">
-            <h2 class="heading-right">swap</h2>
-            <div class="box">
-                <div class="left">
-                    <h3>UNxPORTED Token - UNXP Chart</h3>
-                    <h4>To the moon &nbsp;&nbsp; 🚀</h4>
-                </div>
-                <div class="right container">
-                    <iframe title="UNXP Chart - Coin Brain" class="responsive-iframe" frameBorder="0" scrolling="yes"
-                        src="https://coinbrain.com/coins/0x5371E49eFE295A90CaDc5a1aE85a77A2b620da1A/lite?theme=custom&accent=1af4b3&padding=32&background=000000"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="team" id="Team">
-        <div class="content-box contain">
-            <h2 class="heading-left">Team</h2>
-            <div class="team-container">
-                <div class="team-box sub1">
-                    <div class="img-box">
-                        <img src="./assets/ceoo.png.webp" alt="" />
                     </div>
-                    <div class="person">
-                        <h3>Rotz</h3>
-                        <h4><span>CEO</span>,<br>UNxPORTED</h4>
+                    <div class="team-box sub3">
+                        <div class="img-box">
+                            <img src="./assets/ophead.png.webp" alt="" />
+                        </div>
+                        <div class="person">
+                            <h3>Biljo Biju</h3>
+                            <h4>
+                                <span>MANAGER OP HEAD</span>, <br />
+                                UNxPORTED
+                            </h4>
+                        </div>
                     </div>
-                </div>
-                <div class="team-box sub2">
-                    <div class="img-box">
-                        <img src="./assets/cfo.png.webp" alt="" />
+                    <div class="team-box sub4">
+                        <div class="img-box">
+                            <img src="./assets/mh.png.webp" alt="" />
+                        </div>
+                        <div class="person">
+                            <h3>Abhijith</h3>
+                            <h4><span>MARKETING HEAD</span>,<br />UNxPORTED</h4>
+                        </div>
                     </div>
-                    <div class="person">
-                        <h3>Anil Raj</h3>
-                        <h4><span>CFO</span>,<br>UNxPORTED</h4>
+                    <div class="team-box sub5">
+                        <div class="img-box">
+                            <img src="./assets/teammod.png.webp" alt="" />
+                        </div>
+                        <div class="person">
+                            <h3>Justin</h3>
+                            <h4><span>TEAM MODERATOR</span>,<br />UNxPORTED</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="team-box sub3">
-                    <div class="img-box ">
-                        <img src="./assets/ophead.png.webp" alt="" />
-                    </div>
-                    <div class="person">
-                        <h3>Biljo Biju</h3>
-                        <h4><span>MANAGER OP HEAD</span>, <br> UNxPORTED</h4>
-                    </div>
-                </div>
-                <div class="team-box sub4">
-                    <div class="img-box">
-                        <img src="./assets/mh.png.webp" alt="" />
-                    </div>
-                    <div class="person">
-                        <h3>Abhijith</h3>
-                        <h4><span>MARKETING HEAD</span>,<br>UNxPORTED</h4>
-                    </div>
-                </div>
-                <div class="team-box sub5">
-                    <div class="img-box">
-                        <img src="./assets/teammod.png.webp" alt="" />
-                    </div>
-                    <div class="person">
-                        <h3>Justin</h3>
-                        <h4><span>TEAM MODERATOR</span>,<br>UNxPORTED</h4>
-                    </div>
-                </div>
-                <div class="team-box sub6">
-                    <div class="img-box">
-                        <img src="./assets/kitty.webp" alt="" />
-                    </div>
-                    <div class="person">
-                        <h3>Kitty</h3>
-                        <h4><span>SECURITY SYSTEM</span>,<br>UNxPORTED</h4>
+                    <div class="team-box sub6">
+                        <div class="img-box">
+                            <img src="./assets/kitty.webp" alt="" />
+                        </div>
+                        <div class="person">
+                            <h3>Kitty</h3>
+                            <h4>
+                                <span>SECURITY SYSTEM</span>,<br />UNxPORTED
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-
-    <div class="disclaimer">
-        <div class="contain">
-            <p> Disclaimer. The information provided on
-                this website does not constitute a recommendation to buy or sell any product, token, or coin discussed.
-                Buying and selling tokens is inherently risky, and the authors of this website do not accept any
-                liability for any losses that may occur from buying and selling tokens. Check with local regulations
-                before purchasing any cryptocurrency.
-            </p>
-        </div>
-    </div>
-
-    <footer>
-        <div id="copyright"></div>
-        <div class="flinks">
-            <a title="Facebook" href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/"
-                class="link"><i class="fa-brands fa-facebook"></i></a>
-            <a title="Twitter" href="https://twitter.com/unxportedceo" class="link"><i class="fa-brands fa-twitter"></i></i></a>
-            <a title="Telegram" href="https://telegram.me/unxported" class="link"><i class="fa-brands fa-telegram"
-                    alt="Telegram"></i></a>
-            <a title="Instagram" href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4" class="link"></i><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a title="Youtube" href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w" class="link"><i
-                    class="fa-brands fa-youtube" alt="Youtube"></i></i></a>
-            <a title="Discord" href="https://discord.gg/4kkZHMjMG2" class="link"><i class="fa-brands fa-discord" alt="Discord"></i></a>
         </div>
 
-    </footer>
-    <div class="algata">
-        Designed & Developed by <a title="Algata Creative Studio" target="_blank" href="http://algata.in">Algata</a>
-    </div>
+        <div class="disclaimer">
+            <div class="contain">
+                <p>
+                    Disclaimer. The information provided on this website does
+                    not constitute a recommendation to buy or sell any product,
+                    token, or coin discussed. Buying and selling tokens is
+                    inherently risky, and the authors of this website do not
+                    accept any liability for any losses that may occur from
+                    buying and selling tokens. Check with local regulations
+                    before purchasing any cryptocurrency.
+                </p>
+            </div>
+        </div>
 
+        <footer>
+            <div id="copyright"></div>
+            <div class="flinks">
+                <a
+                    title="Facebook"
+                    href="https://www.facebook.com/1683106065294639/posts/pfbid0rn3x6JkUcUzMEF7mo3qGjbLU7L5ckwDFyB3MeE5TN27Fed3BRchQxdezanc9EoySl/"
+                    class="link"
+                    ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a
+                    title="Twitter"
+                    href="https://twitter.com/unxportedceo"
+                    class="link"
+                    ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                    title="Telegram"
+                    href="https://telegram.me/unxported"
+                    class="link"
+                    ><i class="fa-brands fa-telegram" alt="Telegram"></i
+                ></a>
+                <a
+                    title="Instagram"
+                    href="https://www.instagram.com/invites/contact/?i=3arh2m4y9x14&utm_content=otvrxa4"
+                    class="link"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                    title="Youtube"
+                    href="https://www.youtube.com/channel/UC7NthJReaTBNgw43GsRII1w"
+                    class="link"
+                    ><i class="fa-brands fa-youtube" alt="Youtube"></i
+                ></a>
+                <a
+                    title="Discord"
+                    href="https://discord.gg/4kkZHMjMG2"
+                    class="link"
+                    ><i class="fa-brands fa-discord" alt="Discord"></i
+                ></a>
+            </div>
+        </footer>
+        <div class="algata">
+            Designed & Developed by
+            <a
+                title="Algata Creative Studio"
+                target="_blank"
+                href="http://algata.in"
+                >Algata</a
+            >
+        </div>
 
+        <script src="./js/index.js"></script>
+        <script src="./js/_global.js"></script>
 
-    <script src="./js/index.js"></script>
-    <script src="./js/_global.js"></script>
+        <script
+            src="https://kit.fontawesome.com/025c12b0bf.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <script src="https://kit.fontawesome.com/025c12b0bf.js" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-</body>
-
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </body>
 </html>
